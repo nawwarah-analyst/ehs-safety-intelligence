@@ -1,0 +1,56 @@
+audit_id,audit_date,dept_name,site_location,audit_score,non_compliance_count,audit_status,is_followup_required
+A054,2025-08-06,Maintenance,Plant A,92,0,Fail,1
+,2025-02-11,Production,Plant A,92,0,Fail,1
+A019,2025-11-06,Production,Plant A,78,0,Fail,1
+A046,2025-03-28,Logistics,Plant A,90,1,Fail,0
+A005,2025-07-19,Production,Plant A,85,1,Fail,0
+A044,2025-08-04,Production,Plant A,92,1,Fail,1
+A021,2025-07-14,Logistics,Plant A,78,1,Fail,1
+A048,2026-01-14,Logistics,Plant A,85,1,Fail,1
+A043,2025-12-28,Maintenance,Plant A,85,1,Fail,1
+A035,2025-06-02,Maintenance,Plant A,90,2,Fail,1
+A012,2025-10-19,Maintenance,Plant A,78,2,Fail,1
+A003,2025-04-14,Production,Wh1,82,3,Fail,1
+A027,2025-11-25,Logistics,Wh1,82,3,Fail,1
+A050,2025-07-31,Maintenance,Wh1,78,5,Fail,1
+A037,2025-03-23,Logistics,Plant A,78,5,Fail,1
+A007,2025-04-21,Maintenance,Plant A,85,5,Fail,0
+A042,2025-04-20,Production,Plant A,85,0,Pass,1
+A036,2025-04-12,Maintenance,Plant A,78,0,Pass,1
+A038,2025-08-14,Production,Plant A,90,0,Pass,1
+A040,2025-07-25,Logistics,Plant A,85,0,Pass,1
+A045,2026-01-09,Production,Wh1,85,0,Pass,1
+A025,2025-07-06,Production,Wh1,78,0,Pass,1
+A002,2025-12-28,Production,Wh1,82,0,Pass,1
+A047,2025-04-23,Production,Plant A,78,0,Pass,0
+A016,2025-10-13,Production,Plant A,92,0,Pass,1
+A028,2025-08-01,Logistics,Plant A,85,1,Pass,0
+A004,2025-02-17,Logistics,Wh1,85,1,Pass,1
+A029,2025-01-29,Logistics,Plant A,78,1,Pass,1
+A024,2025-07-02,Production,Plant A,78,1,Pass,1
+A023,2025-11-17,Maintenance,Wh1,85,1,Pass,0
+A034,2025-09-12,Production,Plant A,85,1,Pass,1
+A049,2025-12-03,Maintenance,Wh1,85,1,Pass,1
+A031,2025-02-06,Production,Wh1,85,2,Pass,1
+A013,2025-04-27,Production,Plant A,82,2,Pass,1
+A020,2025-09-17,Production,Plant A,90,2,Pass,1
+A033,2025-08-21,Maintenance,Plant A,92,2,Pass,1
+A053,2025-12-04,Production,Wh1,90,2,Pass,1
+A026,2025-11-25,Production,Plant A,90,2,Pass,1
+A052,2025-02-01,Production,Wh1,78,2,Pass,0
+A030,2025-02-14,Maintenance,Wh1,85,3,Pass,0
+A055,2025-01-21,Logistics,Plant A,85,3,Pass,1
+A008,2025-08-26,Maintenance,Plant A,82,3,Pass,1
+A017,2025-03-29,Logistics,Plant A,85,3,Pass,0
+A011,2025-07-19,Maintenance,Plant A,85,4,Pass,0
+A018,2025-12-30,Maintenance,Plant A,78,4,Pass,1
+A051,2025-07-16,Logistics,Plant A,85,4,Pass,0
+A022,2025-12-25,Production,Plant A,85,4,Pass,1
+A014,2026-01-07,Logistics,Plant A,78,5,Pass,0
+A009,2025-08-05,Production,Wh1,92,5,Pass,1
+A032,2025-05-31,Production,Plant A,85,5,Pass,1
+A015,2025-02-01,Production,Wh1,82,5,Pass,1
+A039,2025-08-18,Logistics,Wh1,82,5,Pass,1
+A010,2025-10-06,Logistics,Plant A,85,5,Pass,1
+A041,2025-06-23,Logistics,Plant A,90,5,Pass,1
+,2025-02-24,Production,Plant A,85,5,Pass,1

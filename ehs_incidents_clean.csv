@@ -1,0 +1,201 @@
+incident_id,employee_id,incident_date,reported_on,reporting_lag_days,dept_name,site_location,shift,injury_type,severity_level,days_lost,root_cause,is_near_miss,incident_year,incident_month,month_name
+1013,EMP105,2025-01-31,2025-02-05,5,Logistics,Plant A,Night,FRACTURE,2 - Medium,3,Machine guard missing,0,2025,1,Jan
+1173,EMP306,2025-02-24,2025-02-25,1,Production,Plant A,Night,CUT,1 - Low,2,Machine guard missing,0,2025,2,Feb
+1037,EMP233,2025-02-22,2025-02-25,3,Maintenance,Wh1,,CUT,1 - Low,2,Machine guard missing,1,2025,2,Feb
+1103,EMP176,2025-02-24,2025-02-26,2,Production,Plant A,,CUT,1 - Low,5,Machine guard missing,0,2025,2,Feb
+1183,,2025-03-09,2025-03-10,1,Production,Plant A,Night,BURN,1 - Low,3,Machine guard missing,0,2025,3,Mar
+1115,EMP366,2025-03-09,2025-03-11,2,Production,Wh1,Day,SLIP,1 - Low,1,Machine guard missing,0,2025,3,Mar
+1124,EMP280,2025-03-19,2025-03-21,2,Production,Wh1,Day,FRACTURE,3 - High,1,Machine guard missing,0,2025,3,Mar
+1072,EMP141,2025-03-24,2025-03-24,0,Production,Wh1,Night,CUT,3 - High,2,Machine guard missing,1,2025,3,Mar
+1014,EMP259,2025-03-21,2025-03-26,5,Production,Plant A,,SLIP,2 - Medium,0,Machine guard missing,1,2025,3,Mar
+1196,EMP370,2025-03-28,2025-03-28,0,Maintenance,Plant A,Night,FRACTURE,3 - High,0,Machine guard missing,1,2025,3,Mar
+1002,EMP183,2025-04-07,2025-04-12,5,Production,Plant A,Night,CUT,2 - Medium,5,Machine guard missing,0,2025,4,Apr
+1133,EMP197,2025-04-29,2025-05-01,2,Production,Plant A,Day,STRAIN,2 - Medium,0,Machine guard missing,1,2025,4,Apr
+1071,EMP284,2025-05-02,2025-05-05,3,Maintenance,Plant A,Day,STRAIN,3 - High,3,Machine guard missing,0,2025,5,May
+1192,EMP334,2025-06-13,2025-06-13,0,Production,Plant A,,FRACTURE,3 - High,3,Machine guard missing,1,2025,6,Jun
+1144,EMP124,2025-06-14,2025-06-15,1,Logistics,Plant A,Day,CUT,1 - Low,3,Machine guard missing,0,2025,6,Jun
+1098,EMP304,2025-06-15,2025-06-16,1,Logistics,Wh1,Night,BURN,1 - Low,0,Machine guard missing,0,2025,6,Jun
+1059,,2025-06-21,2025-06-21,0,Production,Wh1,Day,STRAIN,3 - High,0,Machine guard missing,0,2025,6,Jun
+1176,EMP357,2025-06-19,2025-06-23,4,Production,Wh1,,CUT,2 - Medium,5,Machine guard missing,1,2025,6,Jun
+1113,EMP228,2025-06-24,2025-06-28,4,Production,Wh1,,CUT,2 - Medium,2,Machine guard missing,0,2025,6,Jun
+1067,EMP133,2025-07-16,2025-07-20,4,Maintenance,Wh1,Day,STRAIN,1 - Low,3,Machine guard missing,0,2025,7,Jul
+1085,,2025-07-22,2025-07-24,2,Production,Plant A,,SLIP,2 - Medium,5,Machine guard missing,0,2025,7,Jul
+1101,EMP121,2025-07-24,2025-07-29,5,Production,Plant A,Day,SLIP,1 - Low,2,Machine guard missing,1,2025,7,Jul
+1082,EMP367,2025-08-03,2025-08-04,1,Production,Plant A,Night,STRAIN,3 - High,3,Machine guard missing,1,2025,8,Aug
+1058,EMP216,2025-08-15,2025-08-16,1,Maintenance,Wh1,,CUT,2 - Medium,0,Machine guard missing,1,2025,8,Aug
+1104,EMP211,2025-08-15,2025-08-19,4,Logistics,Wh1,Night,SLIP,1 - Low,3,Machine guard missing,0,2025,8,Aug
+1100,EMP302,2025-08-18,2025-08-21,3,Production,Plant A,Night,FRACTURE,2 - Medium,5,Machine guard missing,1,2025,8,Aug
+1186,EMP348,2025-08-21,2025-08-24,3,Logistics,Plant A,Night,FRACTURE,3 - High,0,Machine guard missing,0,2025,8,Aug
+1189,EMP398,2025-08-27,2025-08-31,4,Production,Plant A,,STRAIN,3 - High,3,Machine guard missing,0,2025,8,Aug
+1105,EMP321,2025-08-29,2025-09-03,5,Logistics,Plant A,Night,BURN,2 - Medium,5,Machine guard missing,1,2025,8,Aug
+1178,EMP227,2025-09-06,2025-09-07,1,Production,Wh1,,BURN,3 - High,0,Machine guard missing,0,2025,9,Sep
+1055,EMP394,2025-09-10,2025-09-13,3,Maintenance,Plant A,Night,SLIP,3 - High,0,Machine guard missing,0,2025,9,Sep
+1129,EMP137,2025-09-15,2025-09-16,1,Production,Plant A,Day,BURN,3 - High,0,Machine guard missing,0,2025,9,Sep
+1046,EMP347,2025-09-18,2025-09-21,3,Production,Wh1,,CUT,3 - High,0,Machine guard missing,0,2025,9,Sep
+1017,EMP112,2025-09-19,2025-09-21,2,Production,Plant A,Day,SLIP,1 - Low,3,Machine guard missing,1,2025,9,Sep
+1121,EMP239,2025-10-05,2025-10-08,3,Logistics,Plant A,Day,STRAIN,3 - High,2,Machine guard missing,0,2025,10,Oct
+1180,EMP222,2025-10-05,2025-10-08,3,Production,Plant A,Night,SLIP,3 - High,2,Machine guard missing,0,2025,10,Oct
+1185,EMP156,2025-10-10,2025-10-10,0,Production,Plant A,Night,BURN,1 - Low,0,Machine guard missing,1,2025,10,Oct
+1057,,2025-10-13,2025-10-18,5,Production,Wh1,Night,STRAIN,3 - High,3,Machine guard missing,0,2025,10,Oct
+1130,EMP193,2025-11-12,2025-11-16,4,Production,Wh1,Night,SLIP,1 - Low,1,Machine guard missing,0,2025,11,Nov
+1060,EMP287,2025-11-22,2025-11-27,5,Production,Plant A,Day,FRACTURE,3 - High,3,Machine guard missing,1,2025,11,Nov
+1025,EMP368,2025-11-30,2025-12-03,3,Production,Plant A,Day,FRACTURE,1 - Low,2,Machine guard missing,1,2025,11,Nov
+1156,EMP371,2025-12-02,2025-12-04,2,Maintenance,Wh1,Night,BURN,3 - High,1,Machine guard missing,0,2025,12,Dec
+1043,EMP278,2025-12-12,2025-12-12,0,Maintenance,Wh1,,SLIP,1 - Low,3,Machine guard missing,0,2025,12,Dec
+1042,EMP148,2025-12-29,2026-01-02,4,Logistics,Plant A,Day,SLIP,1 - Low,0,Machine guard missing,0,2025,12,Dec
+1012,EMP295,2025-02-13,2025-02-18,5,Production,Plant A,Night,CUT,3 - High,3,No PPE,0,2025,2,Feb
+1172,EMP175,2025-02-17,2025-02-19,2,Logistics,Plant A,Day,CUT,1 - Low,0,No PPE,0,2025,2,Feb
+1020,EMP141,2025-02-18,2025-02-20,2,Logistics,Wh1,,SLIP,3 - High,0,No PPE,1,2025,2,Feb
+1091,EMP128,2025-03-06,2025-03-07,1,Production,Plant A,Day,BURN,3 - High,3,No PPE,0,2025,3,Mar
+1083,EMP101,2025-03-22,2025-03-26,4,Production,Wh1,Night,BURN,2 - Medium,0,No PPE,0,2025,3,Mar
+1168,EMP111,2025-03-25,2025-03-28,3,Logistics,Wh1,,BURN,3 - High,3,No PPE,0,2025,3,Mar
+1110,EMP118,2025-04-07,2025-04-11,4,Logistics,Plant A,Day,CUT,2 - Medium,0,No PPE,0,2025,4,Apr
+1010,EMP347,2025-05-21,2025-05-21,0,Production,Plant A,,STRAIN,2 - Medium,1,No PPE,0,2025,5,May
+1199,EMP337,2025-06-10,2025-06-13,3,Logistics,Plant A,Night,CUT,3 - High,3,No PPE,1,2025,6,Jun
+1108,EMP198,2025-06-19,2025-06-19,0,Logistics,Plant A,,SLIP,3 - High,2,No PPE,0,2025,6,Jun
+1191,EMP100,2025-06-20,2025-06-23,3,Production,Plant A,,CUT,2 - Medium,3,No PPE,0,2025,6,Jun
+1150,EMP256,2025-06-29,2025-07-03,4,Production,Plant A,Night,BURN,1 - Low,3,No PPE,1,2025,6,Jun
+1163,EMP371,2025-06-30,2025-07-05,5,Production,Plant A,Day,CUT,3 - High,0,No PPE,0,2025,6,Jun
+1170,EMP186,2025-08-26,2025-08-27,1,Maintenance,Plant A,Day,SLIP,3 - High,5,No PPE,1,2025,8,Aug
+1195,EMP337,2025-09-01,2025-09-02,1,Production,Plant A,Day,FRACTURE,3 - High,3,No PPE,1,2025,9,Sep
+1136,EMP375,2025-09-05,2025-09-10,5,Logistics,Wh1,Night,FRACTURE,1 - Low,3,No PPE,1,2025,9,Sep
+1116,EMP381,2025-09-07,2025-09-11,4,Logistics,Wh1,Night,BURN,3 - High,0,No PPE,1,2025,9,Sep
+1188,EMP201,2025-09-21,2025-09-26,5,Production,Plant A,Day,FRACTURE,1 - Low,3,No PPE,1,2025,9,Sep
+1030,EMP108,2025-10-08,2025-10-10,2,Production,Plant A,Day,FRACTURE,3 - High,2,No PPE,1,2025,10,Oct
+1077,EMP289,2025-10-10,2025-10-12,2,Production,Plant A,,BURN,2 - Medium,5,No PPE,0,2025,10,Oct
+1074,EMP352,2025-10-13,2025-10-18,5,Maintenance,Wh1,,SLIP,1 - Low,2,No PPE,0,2025,10,Oct
+1033,EMP397,2025-11-09,2025-11-11,2,Production,Plant A,Day,SLIP,3 - High,1,No PPE,1,2025,11,Nov
+1134,EMP102,2025-11-12,2025-11-15,3,Maintenance,Plant A,Day,STRAIN,3 - High,1,No PPE,1,2025,11,Nov
+1164,EMP264,2025-11-27,2025-11-27,0,Logistics,Wh1,Night,STRAIN,3 - High,2,No PPE,0,2025,11,Nov
+1143,EMP176,2025-11-29,2025-12-03,4,Production,Plant A,Night,BURN,2 - Medium,3,No PPE,0,2025,11,Nov
+1041,EMP300,2025-12-08,2025-12-09,1,Production,Wh1,Day,FRACTURE,2 - Medium,5,No PPE,0,2025,12,Dec
+1069,EMP270,2025-12-14,2025-12-14,0,Production,Wh1,Day,BURN,1 - Low,5,No PPE,1,2025,12,Dec
+1024,EMP160,2025-12-24,2025-12-28,4,Production,Wh1,Night,FRACTURE,1 - Low,1,No PPE,1,2025,12,Dec
+1018,EMP250,2026-01-09,2026-01-12,3,Maintenance,Wh1,Night,SLIP,3 - High,1,No PPE,1,2026,1,Jan
+1051,EMP173,2026-01-15,2026-01-17,2,Logistics,Wh1,Day,FRACTURE,3 - High,5,No PPE,0,2026,1,Jan
+1053,EMP333,2025-01-29,2025-02-03,5,Production,Plant A,Day,CUT,1 - Low,2,No gloves,1,2025,1,Jan
+1123,EMP353,2025-02-08,2025-02-09,1,Maintenance,Plant A,Day,STRAIN,3 - High,1,No gloves,1,2025,2,Feb
+1081,EMP346,2025-03-06,2025-03-06,0,Logistics,Plant A,,CUT,3 - High,5,No gloves,1,2025,3,Mar
+1182,EMP234,2025-04-01,2025-04-02,1,Production,Wh1,,BURN,2 - Medium,0,No gloves,1,2025,4,Apr
+1127,EMP118,2025-04-01,2025-04-04,3,Production,Plant A,Day,CUT,2 - Medium,3,No gloves,1,2025,4,Apr
+1138,EMP127,2025-04-06,2025-04-09,3,Production,Plant A,,STRAIN,3 - High,3,No gloves,1,2025,4,Apr
+1128,EMP220,2025-04-10,2025-04-11,1,Logistics,Plant A,Day,CUT,1 - Low,3,No gloves,0,2025,4,Apr
+1174,EMP211,2025-04-18,2025-04-22,4,Production,Wh1,Night,BURN,1 - Low,3,No gloves,0,2025,4,Apr
+1177,EMP239,2025-04-23,2025-04-24,1,Production,Wh1,,SLIP,2 - Medium,1,No gloves,1,2025,4,Apr
+1125,EMP320,2025-04-30,2025-05-01,1,Production,Plant A,,CUT,3 - High,0,No gloves,1,2025,4,Apr
+1035,,2025-06-06,2025-06-07,1,Production,Plant A,Night,BURN,3 - High,3,No gloves,1,2025,6,Jun
+1152,EMP117,2025-06-10,2025-06-15,5,Logistics,Wh1,Day,BURN,2 - Medium,0,No gloves,1,2025,6,Jun
+1109,EMP203,2025-07-03,2025-07-05,2,Logistics,Plant A,Night,BURN,3 - High,3,No gloves,0,2025,7,Jul
+1049,EMP333,2025-07-06,2025-07-11,5,Maintenance,Plant A,,CUT,2 - Medium,2,No gloves,1,2025,7,Jul
+1061,EMP215,2025-07-16,2025-07-17,1,Production,Plant A,Day,STRAIN,1 - Low,1,No gloves,0,2025,7,Jul
+1054,EMP111,2025-07-21,2025-07-21,0,Production,Plant A,Night,FRACTURE,3 - High,1,No gloves,0,2025,7,Jul
+1093,EMP375,2025-08-15,2025-08-20,5,Logistics,Plant A,Day,SLIP,3 - High,5,No gloves,0,2025,8,Aug
+1028,EMP294,2025-08-24,2025-08-24,0,Production,Wh1,,CUT,3 - High,5,No gloves,0,2025,8,Aug
+1084,EMP302,2025-08-31,2025-09-03,3,Production,Wh1,Day,CUT,2 - Medium,1,No gloves,0,2025,8,Aug
+1145,EMP204,2025-09-23,2025-09-23,0,Production,Plant A,Day,BURN,1 - Low,5,No gloves,0,2025,9,Sep
+1190,EMP152,2025-10-01,2025-10-06,5,Production,Wh1,Night,STRAIN,3 - High,0,No gloves,0,2025,10,Oct
+1003,EMP198,2025-10-08,2025-10-09,1,Maintenance,Wh1,Night,STRAIN,3 - High,0,No gloves,1,2025,10,Oct
+1032,EMP132,2025-10-13,2025-10-13,0,Logistics,Plant A,Day,STRAIN,1 - Low,5,No gloves,0,2025,10,Oct
+1155,EMP368,2025-11-04,2025-11-04,0,Logistics,Wh1,Day,STRAIN,3 - High,2,No gloves,1,2025,11,Nov
+1038,EMP379,2025-11-06,2025-11-07,1,Logistics,Wh1,Day,STRAIN,3 - High,3,No gloves,0,2025,11,Nov
+1162,,2025-11-04,2025-11-07,3,Maintenance,Plant A,Night,BURN,3 - High,3,No gloves,0,2025,11,Nov
+1126,EMP372,2025-11-03,2025-11-08,5,Maintenance,Plant A,Night,SLIP,3 - High,3,No gloves,1,2025,11,Nov
+1140,EMP160,2025-11-09,2025-11-11,2,Maintenance,Wh1,Night,FRACTURE,2 - Medium,0,No gloves,0,2025,11,Nov
+1149,EMP280,2025-11-09,2025-11-12,3,Logistics,Wh1,Day,STRAIN,3 - High,0,No gloves,0,2025,11,Nov
+1119,EMP193,2025-11-07,2025-11-12,5,Production,Wh1,Night,FRACTURE,3 - High,0,No gloves,1,2025,11,Nov
+1120,EMP227,2025-11-16,2025-11-20,4,Production,Wh1,Night,BURN,1 - Low,0,No gloves,1,2025,11,Nov
+1117,EMP257,2025-12-01,2025-12-03,2,Logistics,Plant A,,FRACTURE,3 - High,3,No gloves,1,2025,12,Dec
+1089,EMP161,2025-12-04,2025-12-06,2,Logistics,Wh1,Night,FRACTURE,3 - High,2,No gloves,1,2025,12,Dec
+1008,EMP387,2025-12-07,2025-12-08,1,Production,Wh1,,STRAIN,2 - Medium,5,No gloves,1,2025,12,Dec
+1094,EMP358,2025-12-08,2025-12-11,3,Production,Plant A,,STRAIN,1 - Low,5,No gloves,0,2025,12,Dec
+1165,EMP159,2025-12-17,2025-12-18,1,Logistics,Plant A,,CUT,3 - High,0,No gloves,1,2025,12,Dec
+1064,EMP388,2025-12-14,2025-12-18,4,Production,Wh1,,BURN,3 - High,3,No gloves,0,2025,12,Dec
+1052,EMP164,2026-01-20,2026-01-23,3,Production,Wh1,,STRAIN,3 - High,1,No gloves,1,2026,1,Jan
+1001,EMP258,2025-01-28,2025-01-29,1,Maintenance,Wh1,Day,CUT,1 - Low,5,Unsafe lifting,0,2025,1,Jan
+1179,EMP199,2025-01-25,2025-01-30,5,Production,Plant A,,CUT,3 - High,0,Unsafe lifting,0,2025,1,Jan
+1175,EMP330,2025-02-04,2025-02-07,3,Logistics,Plant A,,BURN,3 - High,1,Unsafe lifting,1,2025,2,Feb
+1080,EMP265,2025-02-15,2025-02-19,4,Production,Plant A,Day,BURN,3 - High,2,Unsafe lifting,1,2025,2,Feb
+1063,,2025-02-21,2025-02-25,4,Production,Plant A,Day,SLIP,3 - High,5,Unsafe lifting,1,2025,2,Feb
+1107,EMP385,2025-02-24,2025-02-28,4,Production,Wh1,Day,BURN,3 - High,3,Unsafe lifting,0,2025,2,Feb
+1087,EMP181,2025-03-01,2025-03-04,3,Production,Plant A,,BURN,1 - Low,2,Unsafe lifting,0,2025,3,Mar
+1079,EMP100,2025-03-06,2025-03-10,4,Production,Plant A,,SLIP,1 - Low,2,Unsafe lifting,0,2025,3,Mar
+1070,EMP343,2025-03-13,2025-03-15,2,Production,Wh1,Night,BURN,1 - Low,2,Unsafe lifting,0,2025,3,Mar
+1184,EMP367,2025-03-23,2025-03-28,5,Logistics,Plant A,Day,STRAIN,3 - High,5,Unsafe lifting,1,2025,3,Mar
+1006,EMP113,2025-03-25,2025-03-30,5,Logistics,Plant A,Day,STRAIN,3 - High,5,Unsafe lifting,1,2025,3,Mar
+1148,EMP318,2025-03-28,2025-04-02,5,Production,Plant A,,STRAIN,1 - Low,3,Unsafe lifting,0,2025,3,Mar
+1161,EMP397,2025-04-22,2025-04-25,3,Maintenance,Plant A,,BURN,2 - Medium,1,Unsafe lifting,0,2025,4,Apr
+1092,EMP284,2025-05-19,2025-05-24,5,Production,Plant A,Day,CUT,3 - High,2,Unsafe lifting,1,2025,5,May
+1137,EMP179,2025-05-29,2025-06-02,4,Production,Plant A,Day,SLIP,1 - Low,5,Unsafe lifting,0,2025,5,May
+1139,EMP375,2025-06-10,2025-06-12,2,Production,Plant A,Night,FRACTURE,2 - Medium,0,Unsafe lifting,0,2025,6,Jun
+1022,,2025-06-25,2025-06-28,3,Production,Wh1,Day,BURN,3 - High,0,Unsafe lifting,0,2025,6,Jun
+1154,EMP155,2025-06-28,2025-06-29,1,Maintenance,Plant A,Night,STRAIN,3 - High,3,Unsafe lifting,0,2025,6,Jun
+1102,EMP144,2025-07-03,2025-07-03,0,Maintenance,Wh1,Day,CUT,2 - Medium,3,Unsafe lifting,1,2025,7,Jul
+1075,EMP396,2025-07-06,2025-07-07,1,Production,Plant A,,FRACTURE,2 - Medium,1,Unsafe lifting,1,2025,7,Jul
+1066,EMP230,2025-07-06,2025-07-08,2,Maintenance,Wh1,Day,BURN,3 - High,0,Unsafe lifting,1,2025,7,Jul
+1169,EMP149,2025-07-13,2025-07-14,1,Logistics,Plant A,Day,CUT,3 - High,2,Unsafe lifting,0,2025,7,Jul
+1068,EMP209,2025-07-14,2025-07-14,0,Logistics,Plant A,Night,BURN,3 - High,5,Unsafe lifting,1,2025,7,Jul
+1095,EMP226,2025-07-27,2025-07-29,2,Logistics,Plant A,Day,FRACTURE,3 - High,3,Unsafe lifting,0,2025,7,Jul
+1009,EMP204,2025-07-30,2025-07-30,0,Maintenance,Plant A,Day,CUT,3 - High,1,Unsafe lifting,1,2025,7,Jul
+1036,EMP116,2025-08-17,2025-08-19,2,Production,Plant A,,SLIP,3 - High,1,Unsafe lifting,0,2025,8,Aug
+1135,EMP153,2025-09-09,2025-09-11,2,Production,Plant A,,FRACTURE,1 - Low,0,Unsafe lifting,0,2025,9,Sep
+1034,EMP146,2025-09-09,2025-09-14,5,Production,Plant A,Day,STRAIN,3 - High,2,Unsafe lifting,0,2025,9,Sep
+1056,EMP199,2025-09-14,2025-09-17,3,Logistics,Plant A,Night,FRACTURE,2 - Medium,2,Unsafe lifting,0,2025,9,Sep
+1112,EMP120,2025-10-09,2025-10-11,2,Production,Wh1,Day,SLIP,3 - High,0,Unsafe lifting,0,2025,10,Oct
+1023,EMP332,2025-10-09,2025-10-11,2,Production,Wh1,Day,FRACTURE,3 - High,0,Unsafe lifting,0,2025,10,Oct
+1062,EMP285,2025-11-08,2025-11-08,0,Production,Wh1,Day,SLIP,1 - Low,0,Unsafe lifting,0,2025,11,Nov
+1047,EMP155,2025-11-05,2025-11-09,4,Production,Wh1,,BURN,3 - High,5,Unsafe lifting,0,2025,11,Nov
+1114,EMP365,2025-11-08,2025-11-10,2,Production,Plant A,Day,STRAIN,1 - Low,1,Unsafe lifting,0,2025,11,Nov
+1200,EMP361,2025-11-08,2025-11-13,5,Maintenance,Plant A,Night,BURN,3 - High,2,Unsafe lifting,1,2025,11,Nov
+1040,EMP292,2025-11-09,2025-11-13,4,Logistics,Wh1,,FRACTURE,2 - Medium,2,Unsafe lifting,1,2025,11,Nov
+1193,EMP133,2025-11-15,2025-11-20,5,Logistics,Plant A,,BURN,1 - Low,2,Unsafe lifting,1,2025,11,Nov
+1197,EMP209,2025-11-26,2025-11-30,4,Maintenance,Wh1,Day,STRAIN,1 - Low,3,Unsafe lifting,0,2025,11,Nov
+1194,EMP181,2025-12-05,2025-12-06,1,Production,Plant A,Day,SLIP,3 - High,5,Unsafe lifting,0,2025,12,Dec
+1029,EMP134,2025-12-20,2025-12-23,3,Production,Plant A,,FRACTURE,3 - High,3,Unsafe lifting,0,2025,12,Dec
+1158,EMP341,2025-12-20,2025-12-24,4,Maintenance,Wh1,Night,BURN,1 - Low,5,Unsafe lifting,0,2025,12,Dec
+1122,EMP283,2025-12-26,2025-12-29,3,Production,Plant A,,STRAIN,3 - High,3,Unsafe lifting,1,2025,12,Dec
+1088,EMP304,2025-12-25,2025-12-30,5,Production,Wh1,,STRAIN,3 - High,2,Unsafe lifting,0,2025,12,Dec
+1078,,2025-12-25,2025-12-30,5,Production,Wh1,Night,CUT,1 - Low,1,Unsafe lifting,1,2025,12,Dec
+1096,EMP112,2026-01-13,2026-01-13,0,Production,Wh1,,BURN,3 - High,5,Unsafe lifting,0,2026,1,Jan
+1097,EMP269,2026-01-14,2026-01-19,5,Logistics,Plant A,Night,BURN,3 - High,1,Unsafe lifting,0,2026,1,Jan
+1011,EMP222,2025-02-02,2025-02-04,2,Logistics,Wh1,Day,CUT,3 - High,3,Wet floor,1,2025,2,Feb
+1187,EMP176,2025-02-06,2025-02-11,5,Maintenance,Plant A,,SLIP,1 - Low,0,Wet floor,0,2025,2,Feb
+1045,EMP294,2025-02-10,2025-02-12,2,Logistics,Wh1,Day,FRACTURE,3 - High,3,Wet floor,0,2025,2,Feb
+1146,EMP111,2025-02-22,2025-02-24,2,Production,Wh1,Day,FRACTURE,2 - Medium,2,Wet floor,0,2025,2,Feb
+1131,EMP146,2025-03-02,2025-03-05,3,Production,Plant A,Day,STRAIN,3 - High,2,Wet floor,0,2025,3,Mar
+1167,EMP238,2025-03-15,2025-03-15,0,Production,Plant A,Day,STRAIN,1 - Low,3,Wet floor,1,2025,3,Mar
+1044,EMP217,2025-03-18,2025-03-20,2,Production,Plant A,Night,STRAIN,3 - High,3,Wet floor,0,2025,3,Mar
+1159,EMP190,2025-03-27,2025-03-30,3,Maintenance,Wh1,,STRAIN,2 - Medium,3,Wet floor,0,2025,3,Mar
+1026,EMP195,2025-04-04,2025-04-04,0,Maintenance,Plant A,Day,STRAIN,2 - Medium,3,Wet floor,1,2025,4,Apr
+1111,EMP357,2025-04-11,2025-04-13,2,Production,Plant A,,FRACTURE,3 - High,2,Wet floor,1,2025,4,Apr
+1141,EMP300,2025-04-12,2025-04-14,2,Maintenance,Plant A,Night,SLIP,3 - High,2,Wet floor,1,2025,4,Apr
+1016,EMP315,2025-04-11,2025-04-15,4,Production,Wh1,Day,FRACTURE,2 - Medium,3,Wet floor,0,2025,4,Apr
+1004,EMP133,2025-04-12,2025-04-16,4,Production,Plant A,,STRAIN,3 - High,1,Wet floor,1,2025,4,Apr
+1198,EMP322,2025-04-28,2025-04-28,0,Production,Wh1,,STRAIN,2 - Medium,1,Wet floor,0,2025,4,Apr
+1153,EMP366,2025-06-02,2025-06-03,1,Logistics,Wh1,Night,CUT,3 - High,3,Wet floor,1,2025,6,Jun
+1076,EMP184,2025-06-10,2025-06-11,1,Production,Plant A,,STRAIN,1 - Low,5,Wet floor,0,2025,6,Jun
+1160,EMP206,2025-06-21,2025-06-21,0,Production,Wh1,Night,SLIP,1 - Low,3,Wet floor,1,2025,6,Jun
+1118,EMP266,2025-06-19,2025-06-22,3,Production,Plant A,Day,STRAIN,3 - High,2,Wet floor,0,2025,6,Jun
+1106,EMP107,2025-06-21,2025-06-26,5,Production,Wh1,Day,STRAIN,3 - High,2,Wet floor,0,2025,6,Jun
+1050,EMP152,2025-06-23,2025-06-26,3,Logistics,Plant A,Night,FRACTURE,1 - Low,1,Wet floor,0,2025,6,Jun
+1019,EMP298,2025-07-02,2025-07-06,4,Production,Plant A,Night,BURN,2 - Medium,3,Wet floor,1,2025,7,Jul
+1181,EMP331,2025-07-08,2025-07-12,4,Production,Plant A,Night,SLIP,3 - High,2,Wet floor,1,2025,7,Jul
+1039,EMP213,2025-07-19,2025-07-24,5,Production,Plant A,Day,CUT,3 - High,3,Wet floor,1,2025,7,Jul
+1031,EMP386,2025-08-05,2025-08-05,0,Production,Plant A,,BURN,1 - Low,0,Wet floor,0,2025,8,Aug
+1157,EMP293,2025-08-19,2025-08-19,0,Production,Plant A,Night,STRAIN,3 - High,0,Wet floor,0,2025,8,Aug
+1151,EMP248,2025-08-30,2025-08-30,0,Production,Wh1,Night,BURN,1 - Low,3,Wet floor,0,2025,8,Aug
+1099,EMP267,2025-09-07,2025-09-07,0,Logistics,Plant A,Day,STRAIN,3 - High,3,Wet floor,1,2025,9,Sep
+1021,EMP280,2025-09-17,2025-09-22,5,Logistics,Plant A,,STRAIN,3 - High,0,Wet floor,1,2025,9,Sep
+1147,EMP226,2025-09-28,2025-09-28,0,Production,Plant A,,STRAIN,3 - High,5,Wet floor,0,2025,9,Sep
+1048,EMP288,2025-09-29,2025-10-03,4,Maintenance,Plant A,Night,SLIP,3 - High,5,Wet floor,0,2025,9,Sep
+1007,EMP268,2025-11-10,2025-11-11,1,Logistics,Wh1,Night,FRACTURE,3 - High,2,Wet floor,1,2025,11,Nov
+1073,EMP305,2025-11-09,2025-11-12,3,Production,Wh1,Day,FRACTURE,3 - High,2,Wet floor,0,2025,11,Nov
+1142,EMP283,2025-11-12,2025-11-16,4,Production,Wh1,Day,STRAIN,3 - High,1,Wet floor,1,2025,11,Nov
+1090,EMP340,2025-11-12,2025-11-16,4,Production,Plant A,Night,CUT,3 - High,0,Wet floor,0,2025,11,Nov
+1027,EMP333,2025-11-19,2025-11-19,0,Maintenance,Wh1,Day,STRAIN,3 - High,0,Wet floor,1,2025,11,Nov
+1171,EMP118,2025-11-20,2025-11-23,3,Production,Plant A,Night,STRAIN,3 - High,2,Wet floor,0,2025,11,Nov
+1086,EMP367,2025-12-21,2025-12-21,0,Production,Plant A,Day,BURN,3 - High,0,Wet floor,0,2025,12,Dec
+1065,EMP223,2025-12-22,2025-12-23,1,Production,Plant A,Night,BURN,3 - High,2,Wet floor,1,2025,12,Dec
+1005,EMP260,2025-12-29,2026-01-01,3,Production,Plant A,,FRACTURE,1 - Low,3,Wet floor,0,2025,12,Dec
+1166,EMP194,2025-12-29,2026-01-01,3,Production,Wh1,Night,SLIP,2 - Medium,5,Wet floor,0,2025,12,Dec
+1015,EMP298,2026-01-18,2026-01-19,1,Maintenance,Plant A,Night,FRACTURE,3 - High,5,Wet floor,0,2026,1,Jan
+1132,EMP397,2026-01-16,2026-01-21,5,Production,Wh1,Day,BURN,1 - Low,3,Wet floor,1,2026,1,Jan
