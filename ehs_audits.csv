@@ -1,0 +1,56 @@
+audit_id,audit_date,dept,site,auditor,score,non_compliance,status,remarks,followup_required
+,2025/02/24,Production,Plant A,Christopher Ramirez,85,5,Pass,Machine guarding,1
+A002,2025/12/28,Prod.,WH1,Austin Miller,82,0,Pass,Minor issues,Y
+A003,14-04-25,Production,WH1,Thomas Edwards,82,3,FAIL,Minor issues,Yes
+A004,2025/02/17,Logistics,WH1,Brian Palmer,eighty five,1,Pass,Minor issues,Yes
+A005,19-07-25,Production,Plant-A,Antonio Miller,eighty five,1,FAIL,Minor issues,N
+,2025/02/11,Production,Plant A,Valerie Frederick,92,0,FAIL,,Yes
+A007,2025/04/21,Maintenance,Plant A,Michael Stone,85,5,FAIL,,N
+A008,2025/08/26,Maintenance,Plant-A,Juan Howard,82,3,Pass,Missing PPE logs,Y
+A009,05-08-25,Production,WH1,Troy Harris,92,5,p,Missing PPE logs,1
+A010,2025/10/06,Logistics,Plant-A,Tara Sanchez,85,5,Pass,Machine guarding,Y
+A011,2025/07/19,Maintenance,Plant-A,Richard Lee,85,4,Pass,Minor issues,N
+A012,19-10-25,Maintenance,Plant A,Mrs. Sherry Brown,78,2,FAIL,Machine guarding,1
+A013,27-04-25,Prod.,Plant A,Derrick Jefferson PhD,82,2,Pass,Missing PPE logs,1
+A014,2026/01/07,Logistics,Plant A,Chad Brown,78,5,Pass,Machine guarding,N
+A015,2025/02/01,Production,WH1,Jack Patel,82,5,Pass,Missing PPE logs,Y
+A016,2025/10/13,Prod.,Plant-A,John Henderson,92,0,p,Machine guarding,Yes
+A017,2025/03/29,Logistics,Plant-A,Diana Johnson,85,3,Pass,Machine guarding,N
+A018,2025/12/30,Maintenance,Plant-A,Chad Barker,78,4,Pass,Minor issues,1
+A019,2025/11/06,Prod.,Plant A,Jessica Lopez,78,0,FAIL,Minor issues,Yes
+A020,17-09-25,Production,Plant A,Jennifer Fernandez,90,2,Pass,Minor issues,Y
+A021,2025/07/14,Logistics,Plant A,Robert Ingram,78,1,FAIL,Minor issues,Yes
+A022,2025/12/25,Prod.,Plant-A,Karen Moore,eighty five,4,p,Minor issues,Y
+A023,2025/11/17,Maintenance,WH1,Thomas Long,eighty five,1,p,Missing PPE logs,N
+A024,02-07-25,Prod.,Plant A,Derek Jenkins,78,1,p,Minor issues,Y
+A025,2025/07/06,Prod.,WH1,William Burgess,78,0,Pass,,1
+A026,25-11-25,Production,Plant A,Cassandra Cummings,90,2,p,Missing PPE logs,1
+A027,2025/11/25,Logistics,WH1,Cheryl Watkins,82,3,FAIL,Missing PPE logs,Yes
+A028,2025/08/01,Logistics,Plant A,Lindsey James,85,1,Pass,Minor issues,N
+A029,2025/01/29,Logistics,Plant-A,Kelly Bird,78,1,p,Missing PPE logs,Yes
+A030,2025/02/14,Maintenance,WH1,Alicia Sanchez,85,3,Pass,Minor issues,N
+A031,2025/02/06,Prod.,WH1,Michael Shaw,eighty five,2,Pass,Missing PPE logs,Y
+A032,2025/05/31,Prod.,Plant A,Thomas Atkinson,85,5,Pass,,Y
+A033,2025/08/21,Maintenance,Plant-A,Leroy Baker,92,2,p,,1
+A034,2025/09/12,Prod.,Plant-A,Tracy Castillo,eighty five,1,p,,Yes
+A035,02-06-25,Maintenance,Plant-A,Hayley Taylor,90,2,FAIL,,1
+A036,12-04-25,Maintenance,Plant-A,Anthony Harris,78,0,Pass,Missing PPE logs,1
+A037,23-03-25,Logistics,Plant-A,Brian Navarro,78,5,FAIL,Minor issues,Yes
+A038,14-08-25,Production,Plant A,James Mendoza,90,0,Pass,Machine guarding,Y
+A039,2025/08/18,Logistics,WH1,Benjamin Sherman,82,5,Pass,Missing PPE logs,Y
+A040,25-07-25,Logistics,Plant-A,Sherry Rice,85,0,Pass,Machine guarding,Yes
+A041,2025/06/23,Logistics,Plant A,Suzanne Cross,90,5,p,Minor issues,Y
+A042,2025/04/20,Production,Plant-A,Christopher Mckee,eighty five,0,Pass,Missing PPE logs,1
+A043,28-12-25,Maintenance,Plant A,Mary Ramirez,eighty five,1,FAIL,Machine guarding,1
+A044,2025/08/04,Production,Plant-A,Donna Marsh,92,1,FAIL,Missing PPE logs,Y
+A045,09-01-26,Prod.,WH1,Matthew Salazar,eighty five,0,Pass,Missing PPE logs,Yes
+A046,2025/03/28,Logistics,Plant A,Jennifer Mitchell,90,1,FAIL,Minor issues,N
+A047,2025/04/23,Prod.,Plant-A,Earl Luna,78,0,Pass,Minor issues,N
+A048,2026/01/14,Logistics,Plant-A,John Allen,85,1,FAIL,Minor issues,Y
+A049,2025/12/03,Maintenance,WH1,Amanda Anderson,eighty five,1,Pass,Machine guarding,Y
+A050,31-07-25,Maintenance,WH1,Travis Cox,78,5,FAIL,Missing PPE logs,Yes
+A051,16-07-25,Logistics,Plant A,Mr. Brent Rowland,85,4,Pass,Machine guarding,N
+A052,01-02-25,Production,WH1,Jessica Johnson,78,2,Pass,Machine guarding,N
+A053,04-12-25,Prod.,WH1,Michael Coleman,90,2,Pass,Missing PPE logs,1
+A054,06-08-25,Maintenance,Plant A,Jason Rodriguez,92,0,FAIL,Minor issues,Y
+A055,2025/01/21,Logistics,Plant-A,Matthew Brooks,85,3,Pass,Machine guarding,1

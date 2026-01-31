@@ -1,0 +1,201 @@
+incident_id,incident_date,reported_on,employee_name,employee_id,dept_name,site_location,shift,injury_type,severity,days_lost,root_cause,near_miss_flag,supervisor,comments
+1001,28/1/2025,29/1/2025,Stephanie Everett,EMP258,Maintenance,WH1,Day,Cut,Low,5,Unsafe lifting,N,Theresa,
+1002,7/4/2025,12/4/2025,Brian Johnson,EMP183,Production,Plant-A,Night,Cut,Med,5,Machine guard missing,N,Keith,minor
+1003,8/10/2025,9/10/2025,Vanessa Spencer,EMP198,Maintenance,WH1,Night,Strain,HIGH,0,No gloves,Y,Rebecca,late report
+1004,12/4/2025,16/4/2025,Andrew Myers,EMP133,Prod.,Plant A,,Strain,3,1,Wet floor,Y,Matthew,minor
+1005,29/12/2025,1/1/2026,John Weber,EMP260,Prod.,Plant-A,,Fracture,Low,3,Wet floor,0,Paul,minor
+1006,25/3/2025,30/3/2025,Kayla Stewart,EMP113,Logistics,Plant A,Day,Strain,HIGH,5,Unsafe lifting,1,Richard,minor
+1007,10/11/2025,11/11/2025,Catherine Howell,EMP268,Logistics,WH1,Night,Fracture,HIGH,2,Wet floor,Y,Bradley,minor
+1008,7/12/2025,8/12/2025,Erica Phillips,EMP387,Prod.,WH1,,Strain,Med,5,No gloves,Y,Jennifer,minor
+1009,30/7/2025,30/7/2025,Daniel Estrada,EMP204,Maintenance,Plant A,Day,Cut,3,1,Unsafe lifting,Y,Jesse,late report
+1010,21/5/2025,21/5/2025,Gloria Lester,EMP347,Prod.,Plant-A,,Strain,Med,1,No PPE,0,Stephanie,
+1011,2/2/2025,4/2/2025,Laura Wells,EMP222,Logistics,WH1,Day,Cut,3,3,Wet floor,1,Eric,typo
+1012,13/2/2025,18/2/2025,Richard Martinez,EMP295,Production,Plant A,Night,Cut,3,three,No PPE,N,Nicole,late report
+1013,31/1/2025,5/2/2025,Victoria Smith,EMP105,Logistics,Plant A,Night,Fracture,Med,3,Machine guard missing,N,Andrea,minor
+1014,21/3/2025,26/3/2025,Daniel Velasquez,EMP259,Prod.,Plant A,,Slip,Med,0,Machine guard missing,1,Mason,minor
+1015,18/1/2026,19/1/2026,Taylor Reid,EMP298,Maintenance,Plant-A,Night,Fracture,3,5,Wet floor,0,Justin,typo
+1016,11/4/2025,15/4/2025,Oscar Green,EMP315,Prod.,WH1,Day,Fracture,Med,3,Wet floor,0,Michael,minor
+1017,19/9/2025,21/9/2025,Mark Ford,EMP112,Production,Plant A,Day,Slip,Low,3,Machine guard missing,Y,Megan,
+1018,9/1/2026,12/1/2026,Sean Thompson,EMP250,Maintenance,WH1,Night,Slip,3,1,No PPE,Y,Joy,
+1019,2/7/2025,6/7/2025,Rachel Kim,EMP298,Prod.,Plant-A,Night,Burn,Med,3,Wet floor,Y,Anna,minor
+1020,18/2/2025,20/2/2025,Julia Johnson,EMP141,Logistics,WH1,,Slip,HIGH,0,No PPE,Y,Chelsea,typo
+1021,17/9/2025,22/9/2025,Monica Huffman,EMP280,Logistics,Plant A,,Strain,3,0,Wet floor,Y,Dalton,
+1022,25/6/2025,28/6/2025,Sarah Wang,,Production,WH1,Day,Burn,HIGH,0,Unsafe lifting,N,Meredith,late report
+1023,9/10/2025,11/10/2025,John Jones,EMP332,Prod.,WH1,Day,Fracture,3,0,Unsafe lifting,N,Tonya,minor
+1024,24/12/2025,28/12/2025,Harold Thomas,EMP160,Prod.,WH1,Night,Fracture,Low,1,No PPE,Y,Rebecca,minor
+1025,30/11/2025,3/12/2025,Samuel Lewis,EMP368,Production,Plant-A,Day,Fracture,Low,2,Machine guard missing,Y,Steven,
+1026,4/4/2025,4/4/2025,Elizabeth Jones,EMP195,Maintenance,Plant-A,Day,Strain,Med,three,Wet floor,Y,Traci,typo
+1027,19/11/2025,19/11/2025,Robert Espinoza,EMP333,Maintenance,WH1,Day,Strain,HIGH,0,Wet floor,1,Natalie,late report
+1028,24/8/2025,24/8/2025,Sue Horn PhD,EMP294,Production,WH1,,Cut,HIGH,5,No gloves,N,Roger,late report
+1029,20/12/2025,23/12/2025,Bruce Garcia DVM,EMP134,Production,Plant A,,Fracture,HIGH,three,Unsafe lifting,0,Rose,late report
+1030,8/10/2025,10/10/2025,Ian Adams,EMP108,Production,Plant A,Day,Fracture,3,2,No PPE,Y,Derek,minor
+1031,5/8/2025,5/8/2025,Sarah Hanson,EMP386,Production,Plant-A,,Burn,Low,0,Wet floor,0,Todd,late report
+1032,13/10/2025,13/10/2025,Brittney Moore,EMP132,Logistics,Plant A,Day,Strain,Low,5,No gloves,N,Erica,typo
+1033,9/11/2025,11/11/2025,Robert Smith,EMP397,Production,Plant-A,Day,Slip,HIGH,1,No PPE,Y,Virginia,minor
+1034,9/9/2025,14/9/2025,Kimberly Oliver,EMP146,Production,Plant A,Day,Strain,3,2,Unsafe lifting,N,Marcus,minor
+1035,6/6/2025,7/6/2025,Nicole Baldwin,,Prod.,Plant A,Night,Burn,HIGH,three,No gloves,Y,Michelle,late report
+1036,17/8/2025,19/8/2025,Matthew Harris,EMP116,Prod.,Plant-A,,Slip,3,1,Unsafe lifting,0,Jeremy,typo
+1037,22/2/2025,25/2/2025,Scott Carrillo,EMP233,Maintenance,WH1,,Cut,Low,2,Machine guard missing,Y,Cynthia,minor
+1038,6/11/2025,7/11/2025,James Williams,EMP379,Logistics,WH1,Day,Strain,3,three,No gloves,N,Edward,
+1039,19/7/2025,24/7/2025,Whitney Young,EMP213,Prod.,Plant-A,Day,Cut,HIGH,three,Wet floor,Y,Joseph,late report
+1040,9/11/2025,13/11/2025,Clayton Frey,EMP292,Logistics,WH1,,Fracture,Med,2,Unsafe lifting,Y,Natalie,typo
+1041,8/12/2025,9/12/2025,Andrew Harding,EMP300,Production,WH1,Day,Fracture,Med,5,No PPE,N,Lindsey,typo
+1042,29/12/2025,2/1/2026,Antonio Brown,EMP148,Logistics,Plant A,Day,Slip,Low,0,Machine guard missing,N,John,typo
+1043,12/12/2025,12/12/2025,Chelsey Dawson,EMP278,Maintenance,WH1,,Slip,Low,3,Machine guard missing,0,Matthew,typo
+1044,18/3/2025,20/3/2025,Brooke Nunez,EMP217,Prod.,Plant A,Night,Strain,HIGH,three,Wet floor,0,Kristin,minor
+1045,10/2/2025,12/2/2025,James Hartman,EMP294,Logistics,WH1,Day,Fracture,3,3,Wet floor,0,Cristian,typo
+1046,18/9/2025,21/9/2025,Kari Morris DDS,EMP347,Production,WH1,,Cut,HIGH,0,Machine guard missing,0,Eddie,typo
+1047,5/11/2025,9/11/2025,Jeffrey Snyder,EMP155,Production,WH1,,Burn,HIGH,5,Unsafe lifting,0,Aaron,
+1048,29/9/2025,3/10/2025,Hector Maynard,EMP288,Maintenance,Plant-A,Night,Slip,3,5,Wet floor,N,Sean,
+1049,6/7/2025,11/7/2025,Micheal Henry,EMP333,Maintenance,Plant A,,Cut,Med,2,No gloves,1,Donald,
+1050,23/6/2025,26/6/2025,Manuel Carter,EMP152,Logistics,Plant A,Night,Fracture,Low,1,Wet floor,N,Denise,
+1051,15/1/2026,17/1/2026,Eric Munoz,EMP173,Logistics,WH1,Day,Fracture,HIGH,5,No PPE,0,Dale,
+1052,20/1/2026,23/1/2026,Jessica Bates,EMP164,Prod.,WH1,,Strain,3,1,No gloves,Y,Lisa,
+1053,29/1/2025,3/2/2025,Kristina Frederick,EMP333,Prod.,Plant-A,Day,Cut,Low,2,No gloves,1,David,typo
+1054,21/7/2025,21/7/2025,Bradley Carter,EMP111,Prod.,Plant-A,Night,Fracture,HIGH,1,No gloves,N,Gail,typo
+1055,10/9/2025,13/9/2025,Amanda Morrison,EMP394,Maintenance,Plant-A,Night,Slip,3,0,Machine guard missing,N,Jeffrey,
+1056,14/9/2025,17/9/2025,Tammie Henderson,EMP199,Logistics,Plant-A,Night,Fracture,Med,2,Unsafe lifting,0,Ashley,late report
+1057,13/10/2025,18/10/2025,David Johnson,,Production,WH1,Night,Strain,3,3,Machine guard missing,N,Cheryl,minor
+1058,15/8/2025,16/8/2025,Kayla Douglas,EMP216,Maintenance,WH1,,Cut,Med,0,Machine guard missing,Y,Lori,minor
+1059,21/6/2025,21/6/2025,April Johnson,,Production,WH1,Day,Strain,HIGH,0,Machine guard missing,0,Ronald,minor
+1060,22/11/2025,27/11/2025,Kimberly Martinez,EMP287,Production,Plant A,Day,Fracture,HIGH,three,Machine guard missing,Y,Matthew,minor
+1061,16/7/2025,17/7/2025,Jessica White,EMP215,Production,Plant-A,Day,Strain,Low,1,No gloves,0,James,minor
+1062,8/11/2025,8/11/2025,Donald Leon,EMP285,Prod.,WH1,Day,Slip,Low,0,Unsafe lifting,N,Joshua,typo
+1063,21/2/2025,25/2/2025,Mario Schwartz,,Prod.,Plant-A,Day,Slip,HIGH,5,Unsafe lifting,Y,Jacqueline,minor
+1064,14/12/2025,18/12/2025,Billy Black,EMP388,Prod.,WH1,,Burn,3,three,No gloves,N,William,minor
+1065,22/12/2025,23/12/2025,Shelby Jackson,EMP223,Production,Plant A,Night,Burn,3,2,Wet floor,Y,Carolyn,late report
+1066,6/7/2025,8/7/2025,Brian Deleon,EMP230,Maintenance,WH1,Day,Burn,HIGH,0,Unsafe lifting,Y,Crystal,late report
+1067,16/7/2025,20/7/2025,Tracy Aguirre,EMP133,Maintenance,WH1,Day,Strain,Low,3,Machine guard missing,N,Jeffrey,
+1068,14/7/2025,14/7/2025,Regina Williams,EMP209,Logistics,Plant-A,Night,Burn,HIGH,5,Unsafe lifting,Y,Jacob,typo
+1069,14/12/2025,14/12/2025,April Ramirez,EMP270,Prod.,WH1,Day,Burn,Low,5,No PPE,Y,Thomas,
+1070,13/3/2025,15/3/2025,Cynthia George,EMP343,Production,WH1,Night,Burn,Low,2,Unsafe lifting,N,Randy,
+1071,2/5/2025,5/5/2025,Kevin Mccullough,EMP284,Maintenance,Plant-A,Day,Strain,HIGH,3,Machine guard missing,N,Mary,
+1072,24/3/2025,24/3/2025,Gary Navarro,EMP141,Production,WH1,Night,Cut,HIGH,2,Machine guard missing,Y,Brandon,late report
+1073,9/11/2025,12/11/2025,Robert Thomas,EMP305,Production,WH1,Day,Fracture,HIGH,2,Wet floor,N,Jane,typo
+1074,13/10/2025,18/10/2025,Larry Anderson,EMP352,Maintenance,WH1,,Slip,Low,2,No PPE,0,Robert,late report
+1075,6/7/2025,7/7/2025,Katherine Hernandez,EMP396,Production,Plant A,,Fracture,Med,1,Unsafe lifting,1,Jennifer,minor
+1076,10/6/2025,11/6/2025,Tyler Lewis,EMP184,Production,Plant-A,,Strain,Low,5,Wet floor,N,Ann,
+1077,10/10/2025,12/10/2025,Christina Lane,EMP289,Prod.,Plant-A,,Burn,Med,5,No PPE,N,Todd,late report
+1078,25/12/2025,30/12/2025,Troy Thompson,,Prod.,WH1,Night,Cut,Low,1,Unsafe lifting,1,Victor,typo
+1079,6/3/2025,10/3/2025,Christopher Mason,EMP100,Prod.,Plant-A,,Slip,Low,2,Unsafe lifting,0,Kevin,typo
+1080,15/2/2025,19/2/2025,Jennifer Ingram,EMP265,Prod.,Plant-A,Day,Burn,3,2,Unsafe lifting,Y,David,late report
+1081,6/3/2025,6/3/2025,Christopher Rojas,EMP346,Logistics,Plant A,,Cut,HIGH,5,No gloves,1,Michael,typo
+1082,3/8/2025,4/8/2025,Ralph Wheeler,EMP367,Prod.,Plant-A,Night,Strain,HIGH,3,Machine guard missing,1,Tiffany,
+1083,22/3/2025,26/3/2025,Sean Jones,EMP101,Prod.,WH1,Night,Burn,Med,0,No PPE,N,Sarah,late report
+1084,31/8/2025,3/9/2025,Matthew Moody,EMP302,Production,WH1,Day,Cut,Med,1,No gloves,N,Manuel,late report
+1085,22/7/2025,24/7/2025,Christian Byrd,,Production,Plant A,,Slip,Med,5,Machine guard missing,N,Ryan,typo
+1086,21/12/2025,21/12/2025,Victoria Williamson,EMP367,Production,Plant-A,Day,Burn,3,0,Wet floor,0,Tanya,minor
+1087,1/3/2025,4/3/2025,Katherine Harris,EMP181,Prod.,Plant-A,,Burn,Low,2,Unsafe lifting,0,Tasha,late report
+1088,25/12/2025,30/12/2025,Mario Rich,EMP304,Prod.,WH1,,Strain,3,2,Unsafe lifting,0,Micheal,typo
+1089,4/12/2025,6/12/2025,Donald Little,EMP161,Logistics,WH1,Night,Fracture,3,2,No gloves,1,Hannah,
+1090,12/11/2025,16/11/2025,Shane Cobb,EMP340,Production,Plant-A,Night,Cut,3,0,Wet floor,N,Tiffany,late report
+1091,6/3/2025,7/3/2025,Darin Russell,EMP128,Prod.,Plant A,Day,Burn,3,3,No PPE,0,Shannon,minor
+1092,19/5/2025,24/5/2025,William Carney,EMP284,Production,Plant-A,Day,Cut,HIGH,2,Unsafe lifting,1,Michael,
+1093,15/8/2025,20/8/2025,Rebecca Black,EMP375,Logistics,Plant A,Day,Slip,3,5,No gloves,N,Sara,
+1094,8/12/2025,11/12/2025,Darren Greene,EMP358,Production,Plant A,,Strain,Low,5,No gloves,N,Krista,late report
+1095,27/7/2025,29/7/2025,Christopher Lindsey,EMP226,Logistics,Plant A,Day,Fracture,HIGH,three,Unsafe lifting,0,Isaac,minor
+1096,13/1/2026,13/1/2026,Jeffrey Mosley,EMP112,Production,WH1,,Burn,3,5,Unsafe lifting,0,Christopher,late report
+1097,14/1/2026,19/1/2026,Kimberly Gentry,EMP269,Logistics,Plant A,Night,Burn,3,1,Unsafe lifting,N,Ruben,
+1098,15/6/2025,16/6/2025,Susan Woodard,EMP304,Logistics,WH1,Night,Burn,Low,0,Machine guard missing,0,Nathan,
+1099,7/9/2025,7/9/2025,Sheryl Ibarra,EMP267,Logistics,Plant A,Day,Strain,3,3,Wet floor,Y,Ralph,typo
+1100,18/8/2025,21/8/2025,Gregory Thompson,EMP302,Production,Plant-A,Night,Fracture,Med,5,Machine guard missing,Y,Christopher,typo
+1101,24/7/2025,29/7/2025,Dawn Henson,EMP121,Production,Plant A,Day,Slip,Low,2,Machine guard missing,Y,Jermaine,minor
+1102,3/7/2025,3/7/2025,Gina Knight,EMP144,Maintenance,WH1,Day,Cut,Med,3,Unsafe lifting,Y,Gerald,late report
+1103,24/2/2025,26/2/2025,Amanda Ruiz,EMP176,Prod.,Plant A,,Cut,Low,5,Machine guard missing,0,Heather,minor
+1104,15/8/2025,19/8/2025,Samantha Lane,EMP211,Logistics,WH1,Night,Slip,Low,3,Machine guard missing,0,Trevor,minor
+1105,29/8/2025,3/9/2025,Carolyn Wilson,EMP321,Logistics,Plant A,Night,Burn,Med,5,Machine guard missing,Y,Kimberly,late report
+1106,21/6/2025,26/6/2025,Benjamin Davis,EMP107,Prod.,WH1,Day,Strain,3,2,Wet floor,0,Michael,late report
+1107,24/2/2025,28/2/2025,Tammy Johnson,EMP385,Production,WH1,Day,Burn,3,3,Unsafe lifting,0,Dennis,late report
+1108,19/6/2025,19/6/2025,Michelle Padilla,EMP198,Logistics,Plant A,,Slip,3,2,No PPE,N,Geoffrey,typo
+1109,3/7/2025,5/7/2025,Steve Lucero,EMP203,Logistics,Plant-A,Night,Burn,3,three,No gloves,N,Maureen,typo
+1110,7/4/2025,11/4/2025,James Patterson,EMP118,Logistics,Plant A,Day,Cut,Med,0,No PPE,0,Brian,minor
+1111,11/4/2025,13/4/2025,Troy Payne,EMP357,Production,Plant A,,Fracture,3,2,Wet floor,Y,Patricia,late report
+1112,9/10/2025,11/10/2025,Kimberly Howard DDS,EMP120,Prod.,WH1,Day,Slip,HIGH,0,Unsafe lifting,0,Michelle,
+1113,24/6/2025,28/6/2025,Tiffany Woods,EMP228,Production,WH1,,Cut,Med,2,Machine guard missing,N,Shane,minor
+1114,8/11/2025,10/11/2025,Laura Houston MD,EMP365,Production,Plant A,Day,Strain,Low,1,Unsafe lifting,N,Sean,
+1115,9/3/2025,11/3/2025,Zoe Gordon,EMP366,Production,WH1,Day,Slip,Low,1,Machine guard missing,0,Sarah,typo
+1116,7/9/2025,11/9/2025,Lisa Aguirre,EMP381,Logistics,WH1,Night,Burn,3,0,No PPE,Y,Marcus,minor
+1117,1/12/2025,3/12/2025,Valerie Pacheco,EMP257,Logistics,Plant-A,,Fracture,HIGH,three,No gloves,1,Chris,minor
+1118,19/6/2025,22/6/2025,Pamela Shepherd,EMP266,Production,Plant-A,Day,Strain,HIGH,2,Wet floor,N,Andrea,minor
+1119,7/11/2025,12/11/2025,Kimberly Mcdonald,EMP193,Prod.,WH1,Night,Fracture,HIGH,0,No gloves,1,Paul,
+1120,16/11/2025,20/11/2025,Jackson Daniels,EMP227,Prod.,WH1,Night,Burn,Low,0,No gloves,Y,Robert,
+1121,5/10/2025,8/10/2025,David Martin,EMP239,Logistics,Plant A,Day,Strain,3,2,Machine guard missing,0,Vanessa,typo
+1122,26/12/2025,29/12/2025,Richard Clark,EMP283,Production,Plant-A,,Strain,3,three,Unsafe lifting,Y,Angie,minor
+1123,8/2/2025,9/2/2025,Ellen Nichols,EMP353,Maintenance,Plant-A,Day,Strain,HIGH,1,No gloves,Y,Bailey,typo
+1124,19/3/2025,21/3/2025,Matthew Jones,EMP280,Production,WH1,Day,Fracture,3,1,Machine guard missing,N,Erica,late report
+1125,30/4/2025,1/5/2025,Michael Ramos,EMP320,Prod.,Plant-A,,Cut,HIGH,0,No gloves,1,Christopher,late report
+1126,3/11/2025,8/11/2025,Brady Rodriguez,EMP372,Maintenance,Plant-A,Night,Slip,3,3,No gloves,Y,Sandra,
+1127,1/4/2025,4/4/2025,Rachel Pitts,EMP118,Prod.,Plant-A,Day,Cut,Med,three,No gloves,1,Julia,minor
+1128,10/4/2025,11/4/2025,Kristopher Foster,EMP220,Logistics,Plant A,Day,Cut,Low,3,No gloves,N,David,late report
+1129,15/9/2025,16/9/2025,Jody Zimmerman,EMP137,Prod.,Plant A,Day,Burn,HIGH,0,Machine guard missing,N,Pamela,minor
+1130,12/11/2025,16/11/2025,Michael Huynh,EMP193,Production,WH1,Night,Slip,Low,1,Machine guard missing,0,Philip,typo
+1131,2/3/2025,5/3/2025,Sherry Austin,EMP146,Production,Plant A,Day,Strain,3,2,Wet floor,N,Renee,
+1132,16/1/2026,21/1/2026,Jessica Salazar,EMP397,Prod.,WH1,Day,Burn,Low,3,Wet floor,1,Brandi,late report
+1133,29/4/2025,1/5/2025,Patricia Livingston,EMP197,Production,Plant-A,Day,Strain,Med,0,Machine guard missing,Y,Danielle,typo
+1134,12/11/2025,15/11/2025,Christopher Delacruz,EMP102,Maintenance,Plant-A,Day,Strain,3,1,No PPE,Y,Reginald,
+1135,9/9/2025,11/9/2025,Jeremy Morse,EMP153,Prod.,Plant-A,,Fracture,Low,0,Unsafe lifting,N,Alejandro,late report
+1136,5/9/2025,10/9/2025,Tina Miller,EMP375,Logistics,WH1,Night,Fracture,Low,three,No PPE,Y,Sara,typo
+1137,29/5/2025,2/6/2025,Dylan Webster,EMP179,Prod.,Plant-A,Day,Slip,Low,5,Unsafe lifting,N,Brenda,typo
+1138,6/4/2025,9/4/2025,Victor Graham,EMP127,Prod.,Plant A,,Strain,HIGH,3,No gloves,1,Michael,
+1139,10/6/2025,12/6/2025,Kurt Hines,EMP375,Prod.,Plant-A,Night,Fracture,Med,0,Unsafe lifting,0,April,typo
+1140,9/11/2025,11/11/2025,Katherine Mitchell,EMP160,Maintenance,WH1,Night,Fracture,Med,0,No gloves,0,Ryan,typo
+1141,12/4/2025,14/4/2025,Ricky Simmons,EMP300,Maintenance,Plant-A,Night,Slip,HIGH,2,Wet floor,Y,Amanda,typo
+1142,12/11/2025,16/11/2025,Keith Ortega,EMP283,Production,WH1,Day,Strain,HIGH,1,Wet floor,1,Christine,
+1143,29/11/2025,3/12/2025,Alexis Fritz,EMP176,Production,Plant-A,Night,Burn,Med,three,No PPE,0,Devon,
+1144,14/6/2025,15/6/2025,Jennifer Gardner,EMP124,Logistics,Plant A,Day,Cut,Low,3,Machine guard missing,0,Michael,
+1145,23/9/2025,23/9/2025,Roger Matthews,EMP204,Prod.,Plant A,Day,Burn,Low,5,No gloves,0,Julie,late report
+1146,22/2/2025,24/2/2025,Jennifer Brady,EMP111,Production,WH1,Day,Fracture,Med,2,Wet floor,0,Dana,minor
+1147,28/9/2025,28/9/2025,Heather Anderson,EMP226,Prod.,Plant A,,Strain,3,5,Wet floor,N,Sara,minor
+1148,28/3/2025,2/4/2025,Richard Brady,EMP318,Production,Plant-A,,Strain,Low,three,Unsafe lifting,0,Briana,late report
+1149,9/11/2025,12/11/2025,Carl Young,EMP280,Logistics,WH1,Day,Strain,HIGH,0,No gloves,0,Dwayne,typo
+1150,29/6/2025,3/7/2025,Brian Sanders,EMP256,Prod.,Plant-A,Night,Burn,Low,3,No PPE,Y,Diana,late report
+1151,30/8/2025,30/8/2025,Brenda Velasquez,EMP248,Prod.,WH1,Night,Burn,Low,three,Wet floor,0,Nathan,typo
+1152,10/6/2025,15/6/2025,Laura Hudson,EMP117,Logistics,WH1,Day,Burn,Med,0,No gloves,Y,Alex,
+1153,2/6/2025,3/6/2025,Matthew Sanchez,EMP366,Logistics,WH1,Night,Cut,3,3,Wet floor,1,Lauren,minor
+1154,28/6/2025,29/6/2025,Crystal Ross,EMP155,Maintenance,Plant-A,Night,Strain,HIGH,three,Unsafe lifting,0,Matthew,late report
+1155,4/11/2025,4/11/2025,Stacy Thomas,EMP368,Logistics,WH1,Day,Strain,3,2,No gloves,Y,Charles,
+1156,2/12/2025,4/12/2025,Kenneth Williamson,EMP371,Maintenance,WH1,Night,Burn,3,1,Machine guard missing,N,Laura,typo
+1157,19/8/2025,19/8/2025,Ruben Garcia,EMP293,Prod.,Plant A,Night,Strain,3,0,Wet floor,N,Ashley,minor
+1158,20/12/2025,24/12/2025,Mark Smith,EMP341,Maintenance,WH1,Night,Burn,Low,5,Unsafe lifting,0,Jose,minor
+1159,27/3/2025,30/3/2025,Donna Sandoval,EMP190,Maintenance,WH1,,Strain,Med,three,Wet floor,N,James,
+1160,21/6/2025,21/6/2025,Sabrina Harrison MD,EMP206,Production,WH1,Night,Slip,Low,3,Wet floor,1,Adam,minor
+1161,22/4/2025,25/4/2025,Jillian Pearson,EMP397,Maintenance,Plant A,,Burn,Med,1,Unsafe lifting,0,Rhonda,typo
+1162,4/11/2025,7/11/2025,Austin Martinez,,Maintenance,Plant A,Night,Burn,HIGH,three,No gloves,N,Christopher,
+1163,30/6/2025,5/7/2025,Steve Wheeler,EMP371,Prod.,Plant A,Day,Cut,HIGH,0,No PPE,0,Lisa,late report
+1164,27/11/2025,27/11/2025,Katie Wright,EMP264,Logistics,WH1,Night,Strain,HIGH,2,No PPE,0,Jasmine,typo
+1165,17/12/2025,18/12/2025,Austin Johnson,EMP159,Logistics,Plant-A,,Cut,3,0,No gloves,Y,William,minor
+1166,29/12/2025,1/1/2026,Mitchell Delacruz,EMP194,Prod.,WH1,Night,Slip,Med,5,Wet floor,N,Sherry,minor
+1167,15/3/2025,15/3/2025,Isaiah Mercer,EMP238,Prod.,Plant A,Day,Strain,Low,three,Wet floor,Y,Sharon,typo
+1168,25/3/2025,28/3/2025,Nancy Walker,EMP111,Logistics,WH1,,Burn,HIGH,three,No PPE,0,Theresa,typo
+1169,13/7/2025,14/7/2025,Tammy Estes,EMP149,Logistics,Plant A,Day,Cut,HIGH,2,Unsafe lifting,0,John,minor
+1170,26/8/2025,27/8/2025,Jennifer Wilson,EMP186,Maintenance,Plant-A,Day,Slip,HIGH,5,No PPE,1,Jessica,late report
+1171,20/11/2025,23/11/2025,Isabella Hernandez,EMP118,Prod.,Plant-A,Night,Strain,3,2,Wet floor,N,Tabitha,minor
+1172,17/2/2025,19/2/2025,Kelsey Hernandez,EMP175,Logistics,Plant A,Day,Cut,Low,0,No PPE,0,Samantha,typo
+1173,24/2/2025,25/2/2025,Lindsay Valencia,EMP306,Prod.,Plant A,Night,Cut,Low,2,Machine guard missing,0,Grant,typo
+1174,18/4/2025,22/4/2025,Kimberly Bates,EMP211,Production,WH1,Night,Burn,Low,three,No gloves,N,Derrick,
+1175,4/2/2025,7/2/2025,Jackie Henry,EMP330,Logistics,Plant-A,,Burn,HIGH,1,Unsafe lifting,Y,Charles,typo
+1176,19/6/2025,23/6/2025,Michael Brown,EMP357,Prod.,WH1,,Cut,Med,5,Machine guard missing,Y,Michelle,typo
+1177,23/4/2025,24/4/2025,Sarah Douglas,EMP239,Prod.,WH1,,Slip,Med,1,No gloves,Y,Andrea,minor
+1178,6/9/2025,7/9/2025,Donald Lynn,EMP227,Prod.,WH1,,Burn,3,0,Machine guard missing,N,Antonio,minor
+1179,25/1/2025,30/1/2025,Chad Patel,EMP199,Production,Plant-A,,Cut,HIGH,0,Unsafe lifting,N,Samuel,
+1180,5/10/2025,8/10/2025,Clayton James,EMP222,Production,Plant A,Night,Slip,HIGH,2,Machine guard missing,0,William,
+1181,8/7/2025,12/7/2025,Joshua Martinez,EMP331,Prod.,Plant A,Night,Slip,HIGH,2,Wet floor,Y,Bonnie,
+1182,1/4/2025,2/4/2025,Michael Wood,EMP234,Production,WH1,,Burn,Med,0,No gloves,1,Brian,
+1183,9/3/2025,10/3/2025,Andrew Thomas,,Prod.,Plant-A,Night,Burn,Low,3,Machine guard missing,0,Ernest,minor
+1184,23/3/2025,28/3/2025,Edward Coleman,EMP367,Logistics,Plant-A,Day,Strain,HIGH,5,Unsafe lifting,1,Yolanda,typo
+1185,10/10/2025,10/10/2025,Daniel Woods,EMP156,Prod.,Plant A,Night,Burn,Low,0,Machine guard missing,1,April,minor
+1186,21/8/2025,24/8/2025,Christine Richards,EMP348,Logistics,Plant-A,Night,Fracture,HIGH,0,Machine guard missing,0,Scott,minor
+1187,6/2/2025,11/2/2025,Caitlyn Armstrong DDS,EMP176,Maintenance,Plant-A,,Slip,Low,0,Wet floor,0,John,
+1188,21/9/2025,26/9/2025,Samantha Jones,EMP201,Prod.,Plant-A,Day,Fracture,Low,3,No PPE,Y,Michelle,late report
+1189,27/8/2025,31/8/2025,Megan Young,EMP398,Prod.,Plant A,,Strain,HIGH,three,Machine guard missing,N,Jeffrey,
+1190,1/10/2025,6/10/2025,Donald Davis,EMP152,Production,WH1,Night,Strain,HIGH,0,No gloves,0,Jennifer,
+1191,20/6/2025,23/6/2025,Haley Knight,EMP100,Production,Plant-A,,Cut,Med,3,No PPE,0,Michelle,typo
+1192,13/6/2025,13/6/2025,Stephanie Brooks,EMP334,Prod.,Plant A,,Fracture,3,three,Machine guard missing,1,Nathan,
+1193,15/11/2025,20/11/2025,Patricia Ford DVM,EMP133,Logistics,Plant-A,,Burn,Low,2,Unsafe lifting,Y,Tony,typo
+1194,5/12/2025,6/12/2025,Kendra Riddle,EMP181,Production,Plant A,Day,Slip,3,5,Unsafe lifting,N,Donald,
+1195,1/9/2025,2/9/2025,Amber Lopez PhD,EMP337,Prod.,Plant-A,Day,Fracture,HIGH,three,No PPE,Y,Sarah,
+1196,28/3/2025,28/3/2025,Nathan Dixon,EMP370,Maintenance,Plant A,Night,Fracture,3,0,Machine guard missing,Y,Sabrina,late report
+1197,26/11/2025,30/11/2025,Bryan Nixon,EMP209,Maintenance,WH1,Day,Strain,Low,3,Unsafe lifting,N,Barbara,typo
+1198,28/4/2025,28/4/2025,Mitchell White,EMP322,Prod.,WH1,,Strain,Med,1,Wet floor,0,Bethany,late report
+1199,10/6/2025,13/6/2025,Jesse Clark,EMP337,Logistics,Plant A,Night,Cut,3,three,No PPE,1,David,late report
+1200,8/11/2025,13/11/2025,Mr. Robert Donaldson,EMP361,Maintenance,Plant A,Night,Burn,3,2,Unsafe lifting,Y,Sharon,late report
