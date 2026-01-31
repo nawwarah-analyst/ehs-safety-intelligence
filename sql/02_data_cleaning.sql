@@ -1,4 +1,4 @@
--- INCIDENT CLEANING
+-- `INCIDENT CLEANING`
 CREATE OR REPLACE TABLE `practice-project-2025-9898.ehs_analytics.incidents_clean` AS
 SELECT
     -- 1. Identifiers
@@ -59,7 +59,7 @@ SELECT
 FROM `practice-project-2025-9898.ehs_analytics.ehs_incidents`;
 --
 
--- AUDIT CLEANING
+-- `AUDIT CLEANING`
 CREATE OR REPLACE TABLE `practice-project-2025-9898.ehs_analytics.audit_clean` AS
 SELECT
     -- 1. Standardize ID
@@ -119,7 +119,7 @@ SELECT
 FROM `practice-project-2025-9898.ehs_analytics.ehs_audits`;
 
 
--- TRAINING CLEANING
+-- `TRAINING CLEANING`
 CREATE OR REPLACE TABLE `practice-project-2025-9898.ehs_analytics.training_clean` AS
 SELECT
     -- 1. Standardize employee ID
