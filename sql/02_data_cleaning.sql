@@ -118,19 +118,20 @@ SELECT
 
 FROM `practice-project-2025-9898.ehs_analytics.ehs_audits`;
 
+
 -- TRAINING CLEANING
 CREATE OR REPLACE TABLE `practice-project-2025-9898.ehs_analytics.training_clean` AS
 SELECT
-    -- Standardize employee ID
+    -- 1. Standardize employee ID
     CASE WHEN emp_id = '' THEN NULL ELSE emp_id END AS employee_id,
 
-    -- Standardize department
+    -- 2. Standardize department
     CASE
         WHEN dept IN ('Prod.','Prod') THEN 'Production'
         ELSE dept
     END AS dept_name,
 
-    -- Standardize site
+    -- 3. Standardize site
       CASE
         WHEN UPPER(site_location) IN ('PLANT-A', 'PLANTA') THEN 'Plant A'
         WHEN UPPER(site_location) IN ('PLANT-B', 'PLANTB') THEN 'Plant B'
@@ -139,14 +140,14 @@ SELECT
 
     training_type,
 
-    -- Standardize completed
+    -- 4. Standardize completed
     CASE 
     WHEN completed IS TRUE THEN 1
     WHEN completed IS FALSE THEN 0
     ELSE NULL 
     END AS is_completed,
 
-    -- Standardize dates
+    -- 5. Standardize dates
     COALESCE(
   -- Try YYYY/MM/DD (Standard ISO-ish with slashes)
      SAFE.PARSE_DATE('%Y/%m/%d', completion_date),
