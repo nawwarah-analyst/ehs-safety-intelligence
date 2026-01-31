@@ -21,7 +21,6 @@ SELECT
 
     CASE
         WHEN UPPER(site_location) IN ('PLANT-A', 'PLANTA') THEN 'Plant A'
-        WHEN UPPER(site_location) IN ('PLANT-B', 'PLANTB') THEN 'Plant B'
         ELSE INITCAP(site_location)
     END AS site_location,
 
@@ -67,17 +66,10 @@ SELECT
 
     -- 2. FIX: Date Standardizing (Using PARSE_DATE to handle common messy formats)
     COALESCE(
-  -- Try YYYY/MM/DD (Standard ISO-ish with slashes)
      SAFE.PARSE_DATE('%Y/%m/%d', audit_date),
-  
-  -- Try DD-MM-YY (Common manual entry, e.g., 25-01-26)
      SAFE.PARSE_DATE('%d-%m-%y', audit_date),
-  
-  -- Try DD-MM-YYYY (If some years are 4 digits)
      SAFE.PARSE_DATE('%d-%m-%Y', audit_date),
-  
-  -- Try YYYY-MM-DD (Standard BigQuery format)
-   SAFE_CAST(audit_date AS DATE)
+     SAFE_CAST(audit_date AS DATE)
 ) AS audit_date,
 
     -- 3. Standardize department (Using INITCAP for consistency)
@@ -149,30 +141,16 @@ SELECT
 
     -- 5. Standardize dates
     COALESCE(
-  -- Try YYYY/MM/DD (Standard ISO-ish with slashes)
      SAFE.PARSE_DATE('%Y/%m/%d', completion_date),
-  
-  -- Try DD-MM-YY (Common manual entry, e.g., 25-01-26)
      SAFE.PARSE_DATE('%d-%m-%y', completion_date),
-  
-  -- Try DD-MM-YYYY (If some years are 4 digits)
      SAFE.PARSE_DATE('%d-%m-%Y', completion_date),
-  
-  -- Try YYYY-MM-DD (Standard BigQuery format)
    SAFE_CAST(completion_date AS DATE)
 ) AS completion_date,
 
     COALESCE(
-  -- Try YYYY/MM/DD (Standard ISO-ish with slashes)
      SAFE.PARSE_DATE('%Y/%m/%d', expiry),
-  
-  -- Try DD-MM-YY (Common manual entry, e.g., 25-01-26)
      SAFE.PARSE_DATE('%d-%m-%y', expiry),
-  
-  -- Try DD-MM-YYYY (If some years are 4 digits)
      SAFE.PARSE_DATE('%d-%m-%Y', expiry),
-  
-  -- Try YYYY-MM-DD (Standard BigQuery format)
    SAFE_CAST(expiry AS DATE)
 ) AS expiry_date,
 FROM `practice-project-2025-9898.ehs_analytics.ehs_training`;
