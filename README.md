@@ -46,7 +46,7 @@ Interactive  `Power BI dashboards` for:
 - Plant Managers
 
 ### Dashboard Preview
-![Executive Summary](https://github.com/nawwarah-analyst/ehs-safety-intelligence/blob/main/power_bi/dashboard_preview/executive_summary.png))
+![Executive Summary](https://github.com/nawwarah-analyst/ehs-safety-intelligence/blob/main/power_bi/dashboard_preview/executive_summary.png)
 
 ### Key Business KPIs
 The system tracks:
