@@ -46,7 +46,7 @@ Interactive  `Power BI dashboards` for:
 - Plant Managers
 
 ### Dashboard Preview
-![Executive Summary]
+![Executive Summary](executive_summary.png)
 
 ### Key Business KPIs
 The system tracks:
