@@ -45,6 +45,9 @@ Interactive  `Power BI dashboards` for:
 - EHS Managers
 - Plant Managers
 
+### Dashboard Preview
+![Executive Summary]
+
 ### Key Business KPIs
 The system tracks:
 - Total incidents
@@ -60,37 +63,6 @@ The system tracks:
 These metrics allow leadership to monitor both:
 - Lagging indicators (injuries)
 - Leading indicators (training, audits, near misses)
-
-### Repository Structure
-ehs-safety-intelligence/
-│
-├── README.md
-│
-├── data/
-│   ├── raw/
-│   │   ├── incidents.csv
-│   │   ├── training.csv
-│   │   ├── audits.csv
-│   │   └── employees.csv
-│   │
-│   └── processed/
-│       ├── incidents_clean.csv
-│       ├── training_clean.csv
-│       └── audits_clean.csv
-│
-├── sql/
-│   ├── 01_schema.sql
-│   ├── 02_data_cleaning.sql
-│   ├── 03_kpi_metrics.sql
-│   ├── 04_risk_analysis.sql
-│   └── 05_compliance_analysis.sql
-│
-├── powerbi/
-│   └── ehs_safety_intelligence.pbix
-│
-├── reports/
-    ├── Executive_Summary.pdf
-    └── EHS_Risk_Analysis_Report.pdf
 
 ### What This Project Demonstrates
 This is not a charting exercise.
