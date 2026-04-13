@@ -1,99 +1,207 @@
 # EHS Safety Intelligence System
-## Operational Risk Analytics for Manufacturing & Logistics
+### Operational Risk Analytics for Manufacturing & Logistics
 
-### Project Overview
-This project simulates an enterprise-grade `Environment, Health & Safety (EHS) analytics system` built for a mid-size manufacturing and logistics company facing:
-- Rising workplace incidents
-- Failing safety audits
-- Training non-compliance
-- Increasing regulatory pressure
+> **From reactive to predictive** — transforming fragmented safety records into an enterprise-grade risk intelligence platform using BigQuery and Power BI.
 
-The goal is to convert fragmented Excel-based safety records into a data-driven risk intelligence platform that allows management to:
-- Identify high-risk departments and sites
-- Track audit and training compliance
-- Detect early warning signals before accidents occur
+---
 
-### Business Problem
-The company has no centralized view of safety performance.
-Management cannot answer:
-- Which departments are driving incidents?
-- Why do the same accidents keep repeating?
-- Are employees properly trained?
-- Which site will fail the next audit?
+## The Problem
 
-They currently react after injuries occur instead of preventing them.
+A mid-size manufacturing and logistics company is flying blind on safety:
 
-### Solution Architecture
-This project implements a full EHS Business Intelligence pipeline:
-#### Data Sources
-- Incident logs
-- Safety audits
-- Training records
+| Question | Status |
+|---|---|
+| Which departments are driving incidents? | ❌ No visibility |
+| Why do the same accidents keep repeating? | ❌ No root-cause tracking |
+| Are employees properly trained? | ❌ No compliance view |
+| Which site will fail the next audit? | ❌ No early warnings |
 
-#### Data Processing
-- Data cleaning & standardization in BigQuery
-- Date normalization, severity scoring, compliance flags
-- Dimensional modeling (Employee, Site, Department)
+Safety records lived in disconnected Excel files. Management only reacted **after** injuries occurred.
 
-#### Analytics Layer
-- Risk and KPI aggregation tables
-- Incident, training, and audit relationships
+---
 
-#### Visualization
-Interactive  `Power BI dashboards` for:
-- Executives
-- EHS Managers
-- Plant Managers
+## Solution
 
-### Dashboard Preview
-![Executive Summary](https://github.com/nawwarah-analyst/ehs-safety-intelligence/blob/main/power_bi/dashboard_preview/executive_summary.png)
+A full EHS Business Intelligence pipeline — from raw messy data to executive-ready dashboards — built to shift the organisation from **reactive incident response** to **proactive risk prevention**.
 
-### Key Business KPIs
-The system tracks:
-- Total incidents
-- Lost-time injuries (LTI)
-- LTIFR
-- Severity score
-- Near-miss rate
-- Training compliance
-- Audit score
-- Non-compliance volume
+```
+Raw Excel Records
+      │
+      ▼
+ BigQuery (Data Warehouse)
+ ├── Data cleaning & standardisation
+ ├── Date normalisation & severity scoring
+ ├── Compliance flag generation
+ └── Dimensional modelling (Employee, Site, Department)
+      │
+      ▼
+ Analytics Layer
+ ├── Risk & KPI aggregation tables
+ └── Incident × Training × Audit relationships
+      │
+      ▼
+ Power BI Dashboards
+ ├── Executive Summary
+ ├── EHS Manager View
+ └── Plant Manager View
+```
+
+---
+
+## Data Sources
+
+Three source tables simulate real enterprise EHS data with intentional messiness — inconsistent date formats, missing severity values, duplicate records, and mismatched department names:
+
+| Source | Description | Key Fields |
+|---|---|---|
+| `incidents.csv` | Workplace injury and near-miss logs | date, site, department, type, severity, LTI flag |
+| `audits.csv` | Safety audit scores by site | date, site, auditor, score, findings, closure status |
+| `training.csv` | Employee training completion records | employee_id, course, completion_date, pass/fail |
+
+---
+
+## SQL Pipeline (BigQuery)
+
+The SQL layer is structured in three stages:
+
+### Stage 1 — Cleaning (`/sql/01_cleaning/`)
+- Standardises date formats across all three tables
+- Normalises severity labels (`HIGH`, `High`, `high` → `High`)
+- Removes duplicate incident records
+- Flags missing training completion dates
+
+### Stage 2 — Dimensional Modelling (`/sql/02_dimensions/`)
+- `dim_site` — site metadata with region and plant type
+- `dim_department` — department hierarchy
+- `dim_employee` — employee dimension with job role and tenure
+- `dim_date` — full date spine for trend analysis
+
+### Stage 3 — KPI Aggregation (`/sql/03_kpis/`)
+- `fct_incidents` — fact table with severity scoring and LTI flags
+- `fct_audit_scores` — audit performance with open findings count
+- `fct_training_compliance` — compliance rate by department and period
+- `mart_risk_dashboard` — pre-aggregated mart consumed by Power BI
+
+---
+
+## Key KPIs
+
+The system tracks both **lagging** and **leading** safety indicators:
+
+**Lagging (what already happened)**
+- Total incidents by site and department
+- Lost-Time Injuries (LTI) count
+- Lost-Time Injury Frequency Rate (LTIFR)
+- Average severity score
+
+**Leading (early warning signals)**
+- Near-miss rate by department
+- Training compliance % by site
+- Audit score trend (3-month rolling)
+- Open non-compliance findings
 - Follow-up closure rate
 
-These metrics allow leadership to monitor both:
-- Lagging indicators (injuries)
-- Leading indicators (training, audits, near misses)
+Monitoring leading indicators enables management to intervene **before** a near-miss becomes a recordable injury.
 
-### What This Project Demonstrates
-This is not a charting exercise.
-It demonstrates:
-- Real-world messy data handling
-- Safety-critical KPI design
-- Risk-based analytics
-- Dimensional modeling for BI
-- Executive-level reporting
+---
 
-It mirrors how EHS analytics is implemented in regulated industries such as:
-- Manufacturing
-- Logistics
-- Energy
-- Heavy industry
+## Dashboard Preview
 
-### Who This Is For
-This project is designed for:
-- EHS Managers
-- Operations Leaders
-- Compliance Officers
-- Data Analytics recruiters
+![Executive Summary Dashboard](power_bi/dashboard_preview/executive_summary.png)
 
-It shows how data can be used to:
-- Reduce injuries
-- Improve audit performance
-- Lower regulatory and financial risk
+The Power BI report contains three pages:
 
-### Next Steps
-Future extensions could include:
-- Predictive risk scoring
-- Incident forecasting
-- Automated training alerts
-- Cost of injury modeling
+**1. Executive Summary** — High-level KPI scorecard. LTIFR, severity trend, top 3 at-risk sites, training compliance gauge. Designed for 60-second consumption by plant directors.
+
+**2. EHS Manager View** — Incident breakdown by type, department, and cause. Audit score heatmap by site. Near-miss vs recordable injury ratio trend.
+
+**3. Plant Manager View** — Site-specific drill-down. Employee training completion table. Open corrective actions with age and owner. Compliance status by department.
+
+---
+
+## Project Structure
+
+```
+ehs-safety-intelligence/
+│
+├── data/
+│   ├── raw/                  # Original messy source files
+│   └── processed/            # Cleaned outputs after BigQuery pipeline
+│
+├── sql/
+│   ├── 01_cleaning/          # Data standardisation queries
+│   ├── 02_dimensions/        # dim_site, dim_employee, dim_date
+│   └── 03_kpis/              # Fact tables and dashboard mart
+│
+├── power_bi/
+│   ├── ehs_dashboard.pbix    # Full Power BI report file
+│   └── dashboard_preview/    # Screenshot exports
+│
+├── reports/
+│   └── ehs_findings_report.md  # Written analysis of key findings
+│
+└── README.md
+```
+
+---
+
+## Key Findings
+
+Analysis of 12 months of simulated data surfaced the following insights:
+
+- **Site 3 (Warehouse East)** accounts for 38% of all lost-time injuries despite representing only 21% of total headcount — driven by a combination of low training compliance (61%) and the highest near-miss rate across all sites.
+- **Maintenance** and **Loading** departments are repeat-offender departments — same incident types (manual handling, slip/trip) recurring quarterly with no corrective closure.
+- **Audit scores** dropped 14 points on average in Q3 across three sites, preceding a spike in recordable incidents in Q4 — confirming audits as a leading indicator worth monitoring closely.
+- **Training compliance below 70%** at the department level correlates with a 2.3× higher incident rate in the following quarter.
+
+---
+
+## What This Project Demonstrates
+
+This is not a charting exercise. It demonstrates:
+
+- **Real-world data engineering** — handling messy, inconsistent EHS records the way they actually arrive from the field
+- **Safety-critical KPI design** — building metrics that align with ISO 45001 and OSHA recordkeeping standards
+- **Dimensional modelling for BI** — star schema design optimised for Power BI DAX queries
+- **Executive communication** — translating operational data into decisions, not just dashboards
+- **Domain depth** — understanding the difference between LTI, LTIFR, near-miss rates, and why each matters to a different stakeholder
+
+---
+
+## Relevant Industries
+
+This architecture mirrors how EHS analytics is implemented in:
+- Manufacturing & heavy industry
+- Logistics and warehousing
+- Oil & gas / energy
+- Construction
+- Any regulated industry under ISO 45001, OSHA, or RIDDOR
+
+---
+
+## Potential Extensions
+
+- **Predictive risk scoring** — ML model to flag departments at elevated injury risk 30–60 days out, trained on audit trends and training gaps
+- **Incident forecasting** — time-series model to anticipate high-risk periods (seasonal patterns, shift changes)
+- **Cost of injury modelling** — estimate direct and indirect costs per incident type for financial reporting
+- **Automated training alerts** — trigger notifications when compliance drops below threshold
+
+---
+
+## Tools & Stack
+
+| Layer | Tool |
+|---|---|
+| Data warehouse | Google BigQuery |
+| Data transformation | SQL (BigQuery dialect) |
+| Visualisation | Microsoft Power BI |
+| Source data format | CSV (simulated from Excel) |
+| Documentation | Markdown |
+
+---
+
+## About This Project
+
+Built as a portfolio project to demonstrate end-to-end analytics capability in a safety-critical domain. The data is synthetic but designed to reflect realistic patterns found in manufacturing EHS operations.
+
+**Connect:** [LinkedIn](https://linkedin.com) | **Portfolio:** [GitHub](https://github.com/nawwarah-analyst)
