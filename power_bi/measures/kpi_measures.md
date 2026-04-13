@@ -1,5 +1,5 @@
--Dim Date Table
-dim_date =
+# Dim Date Table
+`dim_date =
 VAR MinDate =
 MINX (
 UNION (
@@ -29,4 +29,4 @@ CALENDAR ( MinDate, MaxDate ),
 "Month Year Sort", FORMAT ( [Date], "YYYYMM" ), -- Essential for sorting charts
 "Weekday", FORMAT ( [Date], "dddd" ),
 "Is Weekend", IF( WEEKDAY([Date], 2) > 5, "Weekend", "Weekday" ) -- Great for seeing if accidents happen on weekends
-)
+)` 
