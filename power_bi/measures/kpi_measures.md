@@ -14,6 +14,7 @@
 
 ##### Total Days Lost
 `Total Days Lost = SUM(fact_incidents[days_lost])`
+
 ---
 # 2. Industry Standard Rates (LTIFR & TRIR)
 ### A mid-size company with 1,200 employees, we will estimate **2,500,000 man-hours per year** (approx. 208,333 per month).
