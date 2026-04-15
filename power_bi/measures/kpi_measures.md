@@ -1,7 +1,4 @@
 # 1. Fundamental Base Measures
-### These are the building blocks. Create these first.
-
-#### Code snippet
 
 ##### Total Incident Count
 `Total Incidents = COUNT(fact_incidents[incident_id])`
@@ -19,22 +16,43 @@
 # 2. Industry Standard Rates (LTIFR & TRIR)
 ### A mid-size company with 1,200 employees, we will estimate **2,500,000 man-hours per year** (approx. 208,333 per month).
 
-#### Code snippet
 
 ##### Monthly Man Hours (Assuming 1200 pax * 174 hours avg)
-`Monthly Man Hours = 1200 * 174`
+`Total Man Hours = 
+VAR AvgMonthlyHours = 174
+VAR TotalHeadcount = 1200
+VAR NumberOfMonthsSelected = DISTINCTCOUNT(dim_date[Month Year])
+RETURN
+TotalHeadcount * AvgMonthlyHours * NumberOfMonthsSelected`
 
 ##### LTIFR (Lost Time Injury Frequency Rate)
 ###### Formula: (LTI / Hours) * 1,000,000
-`LTIFR = VAR TotalLTI = [LTI Count]`
--- Assuming 1,200 employees working 176 hours a month
-`VAR TotalHours = 1200 * 176
+`LTIFR = 
+DIVIDE([LTI Count] * 1000000,[Total Man Hours], 0)`
+
+##### Severity Score
+`Avg Severity Score = AVERAGE(fact_incidents[severity_score])`
+
+##### Near Miss Ratio
+`Near Miss Ratio = DIVIDE([Total Near Miss], [Total Incidents])`
+
+---
+# 3. Compliance
+##### Training Completion
+`Training Completion % =
+VAR TotalStaff = DISTINCTCOUNT(dim_employee[employee_id])
+VAR TrainedStaff = CALCULATE(DISTINCTCOUNT(fact_training[employee_id]), fact_training[is_completed] = 1)
 RETURN
-DIVIDE(TotalLTI * 1000000, TotalHours, 0)`
+DIVIDE(TrainedStaff, TotalStaff, 0)`
 
-##### TRIR (Total Recordable Incident Rate)
-###### Formula: (Recordable / Hours) * 200,000
-`TRIR = DIVIDE([Recordable Incidents] * 200000, [Monthly Man Hours], 0)`
+##### Expiring Certificates
+`Expiring Certificates = 
+CALCULATE(
+    COUNT(fact_training[employee_id]),
+    USERELATIONSHIP(dim_date[Date], fact_training[expiry_date]))`
 
-##### Severity Rate (Average Days Lost per Incident)
-`Severity Rate = DIVIDE([Total Days Lost], [Total Incidents], 0)`
+##### Average Audit Score
+`Avg Audit Score = AVERAGE(fact_audits[audit_score])`
+
+##### Follow-up Rate
+`Follow-up Rate = AVERAGE(fact_audits[is_followup_required])`
