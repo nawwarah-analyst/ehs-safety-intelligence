@@ -59,7 +59,7 @@ This project implements a full procurement risk intelligence pipeline:
 
 ### Dashboard Preview
 
-[![Executive Summary](power_bi/dashboard_screenshot/executive_summary.png)](power_bi/dashboard_screenshot/executive_summary.png)
+[![Executive Summary](power_bi/dashboard_preview/executive_summary.png)](power_bi/dashboard_preview/executive_summary.png)
 
 ---
 
