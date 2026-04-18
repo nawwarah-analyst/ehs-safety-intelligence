@@ -1,204 +1,148 @@
-# EHS Safety Intelligence System
-### Operational Risk Analytics for Manufacturing & Logistics
+# Supply Chain Risk & Financial Exposure Analytics
 
-> **From reactive to predictive** — transforming fragmented safety records into an enterprise-grade risk intelligence platform using BigQuery and Power BI.
+## Procurement Risk Intelligence for Operations & Finance Teams
+
+### Project Overview
+
+This project simulates an enterprise-grade supply chain risk system built for a procurement team facing a problem most organisations cannot quantify:
+
+- Supplier deliveries are unpredictable — but no one knows by how much
+- Capital is being tied up in safety stock to buffer against unknown volatility
+- Finance cannot put a dollar figure on supplier-driven risk
+- Procurement decisions are based on average lead times, which hide the real danger
+
+The goal is to convert raw order and delivery data into a quantified, decision-ready risk intelligence platform that allows leadership to:
+
+- Know exactly how much of their portfolio is financially exposed
+- Identify which suppliers and categories are driving that exposure
+- Act before disruptions happen, not after
 
 ---
 
-## The Problem
+### Business Problem
 
-A mid-size manufacturing and logistics company is flying blind on safety:
+The procurement team has no centralised view of supplier reliability in financial terms.
+Leadership cannot answer:
 
-| Question | Status |
+- Which suppliers are the most unpredictable — and how unpredictable?
+- How much money is currently at risk because of delivery volatility?
+- Which product categories need immediate intervention?
+- Are we over-buffering with safety stock because we don't trust our suppliers?
+
+They currently respond to supply disruptions reactively. This project changes that.
+
+---
+
+### Solution Architecture
+
+This project implements a full procurement risk intelligence pipeline:
+
+#### Data Source
+- Supply chain logistics dataset (Kaggle) — 1,000 orders, 30 suppliers, 5 product categories, Jan–Dec 2023
+
+#### Statistical Engine (Python)
+- Feature engineering: Actual Lead Time derived from Order Date and Delivery Date
+- Supplier Volatility Index: Coefficient of Variation (CV) of lead times per supplier
+- Risk classification: High / Medium / Low grade assigned to every supplier
+- Output: Enriched dataset with risk metrics that don't exist in the raw data
+
+#### Relational Engine (BigQuery)
+- Star Schema design: `Fact_Orders` joined to `Dim_Suppliers`
+- Pre-aggregated executive risk view — isolates Value at Risk by category and risk grade
+- Optimised for fast Power BI query performance
+
+#### Visualisation (Power BI)
+- Interactive 2-page dashboard for executives and procurement analysts
+- DAX measures for Value at Risk, Risk Exposure %, and dynamic Risk Status flags
+
+---
+
+### Dashboard Preview
+
+[![Executive Summary](power_bi/dashboard_screenshot/executive_summary.png)](power_bi/dashboard_screenshot/executive_summary.png)
+
+---
+
+### Key Results
+
+| Metric | Value |
 |---|---|
-| Which departments are driving incidents? | ❌ No visibility |
-| Why do the same accidents keep repeating? | ❌ No root-cause tracking |
-| Are employees properly trained? | ❌ No compliance view |
-| Which site will fail the next audit? | ❌ No early warnings |
+| Total Portfolio Value | $25.29M |
+| **Value at Risk (VaR)** | **$22.43M** |
+| Risk Exposure % | **88.69%** |
+| Orders with Disruptions | 514 of 1,000 (51.4%) |
+| Categories in Critical Status | Electronics, Pharma |
 
-Safety records lived in disconnected Excel files. Management only reacted **after** injuries occurred.
-
----
-
-## Solution
-
-A full EHS Business Intelligence pipeline — from raw messy data to executive-ready dashboards — built to shift the organisation from **reactive incident response** to **proactive risk prevention**.
-
-```
-Raw Excel Records
-      │
-      ▼
- BigQuery (Data Warehouse)
- ├── Data cleaning & standardisation
- ├── Date normalisation & severity scoring
- ├── Compliance flag generation
- └── Dimensional modelling (Employee, Site, Department)
-      │
-      ▼
- Analytics Layer
- ├── Risk & KPI aggregation tables
- └── Incident × Training × Audit relationships
-      │
-      ▼
- Power BI Dashboards
- ├── Executive Summary
- ├── EHS Manager View
- └── Plant Manager View
-```
+> 88.69% of total procurement spend is tied to High Volatility suppliers. In a healthy supply chain, this figure typically sits below 30%.
 
 ---
 
-## Data Sources
+### Key Business KPIs
 
-Three source tables simulate real enterprise EHS data with intentional messiness — inconsistent date formats, missing severity values, duplicate records, and mismatched department names:
+The system tracks:
 
-| Source | Description | Key Fields |
-|---|---|---|
-| `incidents.csv` | Workplace injury and near-miss logs | date, site, department, type, severity, LTI flag |
-| `audits.csv` | Safety audit scores by site | date, site, auditor, score, findings, closure status |
-| `training.csv` | Employee training completion records | employee_id, course, completion_date, pass/fail |
+- **Value at Risk (VaR)** — total spend tied to High Volatility suppliers
+- **Risk Exposure %** — proportion of portfolio at risk
+- **Volatility Index (CV)** — delivery unpredictability score per supplier
+- **Risk Grade** — High / Medium / Low classification per supplier
+- **Avg Actual Lead Time** — true end-to-end delivery window
+- **Disruption Rate** — share of orders affected by Shortage, Strike, Weather, or Customs events
 
----
-
-## SQL Pipeline (BigQuery)
-
-The SQL layer runs in five sequential files, each building on the previous:
-
-### Stage 1 — Schema (`01_schema.sql`)
-- Defines all table structures and data types
-- Sets up the base tables for incidents, audits, and training records
-
-### Stage 2 — Data Cleaning (`02_data_cleaning.sql`)
-- Standardises date formats across all three tables
-- Normalises severity labels (`HIGH`, `High`, `high` → `High`)
-- Removes duplicate incident records
-- Flags missing training completion dates
-
-### Stage 3 — Dimensions (`03_dimensions.sql`)
-- `dim_site` — site metadata with region and plant type
-- `dim_department` — department hierarchy
-- `dim_employee` — employee dimension with job role and tenure
+These metrics combine to give procurement and finance a single view of both current exposure and the suppliers driving it.
 
 ---
 
-## Key KPIs
+### What This Project Demonstrates
 
-The system tracks both **lagging** and **leading** safety indicators:
+This is not a standard dashboard exercise.
+It demonstrates:
 
-**Lagging (what already happened)**
-- Total incidents by site and department
-- Lost-Time Injuries (LTI) count
-- Lost-Time Injury Frequency Rate (LTIFR)
-- Average severity score
+- Feature engineering on raw transactional data (deriving metrics that don't exist)
+- Statistical modelling for operational risk (Coefficient of Variation as a volatility signal)
+- Cloud data engineering (BigQuery Star Schema with pre-aggregated analytical views)
+- Executive-level DAX logic (VaR, dynamic risk status flags, conditional formatting)
+- End-to-end pipeline thinking: raw data → enriched metrics → relational model → decision dashboard
 
-**Leading (early warning signals)**
-- Near-miss rate by department
-- Training compliance % by site
-- Audit score trend (3-month rolling)
-- Open non-compliance findings
-- Follow-up closure rate
+It mirrors how supply chain risk analytics is applied in:
 
-Monitoring leading indicators enables management to intervene **before** a near-miss becomes a recordable injury.
+- Manufacturing and logistics operations
+- Procurement and strategic sourcing teams
+- Finance teams responsible for working capital optimisation
 
 ---
 
-## Dashboard Preview
+### Who This Is For
 
-![Executive Summary Dashboard](power_bi/dashboard_preview/executive_summary.png)
+This project is designed for:
 
-The Power BI report contains three pages:
+- Procurement Managers and Supply Chain Leaders
+- Operations and Finance Directors
+- Data Analytics recruiters evaluating full-stack analytical capability
 
-**1. Executive Summary** — High-level KPI scorecard. LTIFR, severity trend, top 3 at-risk sites, training compliance gauge. Designed for 60-second consumption by plant directors.
+It shows how data can be used to:
 
-**2. EHS Manager View** — Incident breakdown by type, department, and cause. Audit score heatmap by site. Near-miss vs recordable injury ratio trend.
-
-**3. Plant Manager View** — Site-specific drill-down. Employee training completion table. Open corrective actions with age and owner. Compliance status by department.
-
----
-
-## Project Structure
-
-```
-ehs-safety-intelligence/
-│
-├── data/
-│   ├── raw/                      # Original messy source files
-│   └── processed/                # Cleaned outputs after BigQuery pipeline
-│
-├── sql/
-│   ├── 01_schema.sql             # Table definitions and data types
-│   ├── 02_data_cleaning.sql      # Standardisation, deduplication, null handling
-│   └── 03_dimensions.sql         # dim_site, dim_employee, dim_department, dim_date
-│
-├── power_bi/
-│   ├── ehs_dashboard.pbix        # Full Power BI report file
-│   ├── dashboard_preview/        # Screenshot exports
-│   └── measure/
-├── reports/
-│   └── ehs_findings_report.md    # Written analysis of key findings
-│
-└── README.md
-```
+- Quantify supplier risk in financial terms
+- Reduce safety stock costs through better supplier intelligence
+- Prevent reactive crisis management with proactive risk scoring
 
 ---
 
-## Key Findings
+### Next Steps
 
-Analysis of 12 months of simulated data surfaced the following insights:
+Future extensions could include:
 
-- **Site 3 (Warehouse East)** accounts for 38% of all lost-time injuries despite representing only 21% of total headcount — driven by a combination of low training compliance (61%) and the highest near-miss rate across all sites.
-- **Maintenance** and **Loading** departments are repeat-offender departments — same incident types (manual handling, slip/trip) recurring quarterly with no corrective closure.
-- **Audit scores** dropped 14 points on average in Q3 across three sites, preceding a spike in recordable incidents in Q4 — confirming audits as a leading indicator worth monitoring closely.
-- **Training compliance below 70%** at the department level correlates with a 2.3× higher incident rate in the following quarter.
-
----
-
-## What This Project Demonstrates
-
-This is not a charting exercise. It demonstrates:
-
-- **Real-world data engineering** — handling messy, inconsistent EHS records the way they actually arrive from the field
-- **Safety-critical KPI design** — building metrics that align with ISO 45001 and OSHA recordkeeping standards
-- **Dimensional modelling for BI** — star schema design optimised for Power BI DAX queries
-- **Executive communication** — translating operational data into decisions, not just dashboards
-- **Domain depth** — understanding the difference between LTI, LTIFR, near-miss rates, and why each matters to a different stakeholder
+- Composite risk index incorporating demand volatility and price fluctuation
+- Automated monthly supplier re-scoring pipeline with risk grade change alerts
+- Predictive disruption modelling using historical `Disruption_Type` and `Disruption_Severity` data
+- Cost of disruption modelling (inventory holding cost + stock-out penalty)
 
 ---
 
-## Relevant Industries
+### Full Technical Documentation
 
-This architecture mirrors how EHS analytics is implemented in:
-- Manufacturing & heavy industry
-- Logistics and warehousing
-- Oil & gas / energy
-- Construction
-- Any regulated industry under ISO 45001, OSHA, or RIDDOR
+For complete methodology, formula derivations, SQL schema design, DAX logic, and a limitations analysis — see [`Technical Documentation.pdf`](Technical%20Documentation.pdf)
 
 ---
 
-## Potential Extensions
-
-- **Predictive risk scoring** — ML model to flag departments at elevated injury risk 30–60 days out, trained on audit trends and training gaps
-- **Incident forecasting** — time-series model to anticipate high-risk periods (seasonal patterns, shift changes)
-- **Cost of injury modelling** — estimate direct and indirect costs per incident type for financial reporting
-- **Automated training alerts** — trigger notifications when compliance drops below threshold
-
----
-
-## Tools & Stack
-
-| Layer | Tool |
-|---|---|
-| Data warehouse | Google BigQuery |
-| Data transformation | SQL (BigQuery dialect) |
-| Visualisation | Microsoft Power BI |
-| Source data format | CSV (simulated from Excel) |
-| Documentation | Markdown |
-
----
-
-## About This Project
-
-Built as a portfolio project to demonstrate end-to-end analytics capability in a safety-critical domain. The data is synthetic but designed to reflect realistic patterns found in manufacturing EHS operations.
-
-**Connect:** [LinkedIn](https://linkedin.com) | **Portfolio:** [GitHub](https://github.com/nawwarah-analyst)
+> **Stack:** Python · SQL (Google BigQuery) · Power BI (DAX)  
+> **Data:** [Kaggle Supply Chain Logistics Dataset](https://www.kaggle.com/) — simulated for portfolio purposes
