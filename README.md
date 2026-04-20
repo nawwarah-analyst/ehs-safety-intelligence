@@ -9,12 +9,12 @@
 
 A mid-size manufacturing and logistics company is flying blind on safety:
 
-| Question | Status |
-|---|---|
-| Which departments are driving incidents? | ❌ No visibility |
-| Why do the same accidents keep repeating? | ❌ No root-cause tracking |
-| Are employees properly trained? | ❌ No compliance view |
-| Which site will fail the next audit? | ❌ No early warnings |
+| Question | Before | After |
+|---|---|---|
+| Which departments are driving incidents? | ❌ No visibility | ✅ Production leads all departments in volume, lost days, and High severity cases |
+| Why do the same accidents keep repeating? | ❌ No root-cause tracking | ✅ Unsafe lifting and missing machine guards identified as top recurring causes |
+| Are employees properly trained? | ❌ No compliance view | ✅ Training completion at 41% — 16 expired certificates, expiry wave forecast for Oct–Nov 2026 |
+| Which site will fail the next audit? | ❌ No early warnings | ✅ Audit score at 84 vs 90 target — 120 non-compliances tracked with 78% follow-up rate |
 
 Safety records lived in disconnected Excel files. Management only reacted **after** injuries occurred.
 
@@ -78,6 +78,14 @@ The SQL layer runs in five sequential files, each building on the previous:
 - `dim_site` — site metadata with region and plant type
 - `dim_department` — department hierarchy
 - `dim_employee` — employee dimension with job role and tenure
+- `dim_date` — full date spine for trend analysis
+
+### Stage 4 — Fact Table (`04_fact_table.sql`)
+- `fct_incidents` — incident fact table with severity scoring and LTI flags
+- `fct_audit_scores` — audit performance with open findings count
+- `fct_training_compliance` — compliance rate by department and period
+
+> **Note:** KPI calculations (LTIFR, near-miss ratio, training compliance %, audit score trend) are implemented as DAX measures within Power BI rather than SQL, keeping business logic centralised in the reporting layer and separate from the data model.
 
 ---
 
@@ -108,11 +116,11 @@ Monitoring leading indicators enables management to intervene **before** a near-
 
 The Power BI report contains three pages:
 
-**1. Executive Summary** — High-level KPI scorecard. LTIFR, severity trend, top 3 at-risk sites, training compliance gauge. Designed for 60-second consumption by plant directors.
+**1. Incidents Overview** — Executive KPI scorecard showing Total Incidents (200), LTI Count (156), LTIFR (12.25), Severity Score (2.28), and Near Miss Ratio (0.43). Includes incidents vs severity trend by month, incident volume by department and injury type, severity level distribution, and total days lost by site.
 
-**2. EHS Manager View** — Incident breakdown by type, department, and cause. Audit score heatmap by site. Near-miss vs recordable injury ratio trend.
+**2. Incident Analysis** — Deep-dive into root causes (unsafe lifting, machine guard missing, wet floor, no PPE) and nature of injuries by type. Day-of-week analysis reveals Sunday as the highest-incident day. Severity by department shows Production carrying the heaviest burden of High severity lost days.
 
-**3. Plant Manager View** — Site-specific drill-down. Employee training completion table. Open corrective actions with age and owner. Compliance status by department.
+**3. Training & Audit Compliance** — Training completion rate (41%), training status breakdown (Valid / Expired / Expiring Soon), and a forward-looking expiry forecast through 2028. Audit performance shows average score of 84 against a 90-point target, with 120 total non-compliances, 78% follow-up rate, and a Score vs Non-Compliance scatter by department.
 
 ---
 
@@ -128,12 +136,15 @@ ehs-safety-intelligence/
 ├── sql/
 │   ├── 01_schema.sql             # Table definitions and data types
 │   ├── 02_data_cleaning.sql      # Standardisation, deduplication, null handling
-│   └── 03_dimensions.sql         # dim_site, dim_employee, dim_department, dim_date
+│   ├── 03_dimensions.sql         # dim_site, dim_employee, dim_department, dim_date
+│   └── 04_fact_table.sql         # fct_incidents, fct_audits, fct_training
 │
 ├── power_bi/
 │   ├── ehs_dashboard.pbix        # Full Power BI report file
-│   ├── dashboard_preview/        # Screenshot exports
-│   └── measure/
+│   ├── measures/                 # DAX measure documentation
+│   │   └── kpi_measures.md       # All KPI formulas (LTIFR, compliance %, near-miss ratio)
+│   └── dashboard_preview/        # Screenshot exports (3 pages)
+│
 ├── reports/
 │   └── ehs_findings_report.md    # Written analysis of key findings
 │
@@ -144,18 +155,21 @@ ehs-safety-intelligence/
 
 ## Key Findings
 
-Analysis of 12 months of simulated data surfaced the following insights:
+Analysis of incident, audit, and training data (2023–2026, with the majority of incidents occurring in 2025) surfaced four critical risk patterns:
 
-- **Site 3 (Warehouse East)** accounts for 38% of all lost-time injuries despite representing only 21% of total headcount — driven by a combination of low training compliance (61%) and the highest near-miss rate across all sites.
-- **Maintenance** and **Loading** departments are repeat-offender departments — same incident types (manual handling, slip/trip) recurring quarterly with no corrective closure.
-- **Audit scores** dropped 14 points on average in Q3 across three sites, preceding a spike in recordable incidents in Q4 — confirming audits as a leading indicator worth monitoring closely.
-- **Training compliance below 70%** at the department level correlates with a 2.3× higher incident rate in the following quarter.
+- **Production is the highest-risk department across every dimension** — it leads in total incident volume, accumulates the most lost days (~280 at Plant A vs ~150 at Wh1), and carries the highest concentration of High severity cases. Unsafe lifting and missing machine guards are the top two root causes, both preventable through engineering controls and procedural enforcement.
+
+- **LTIFR of 12.25 signals a systemic injury problem.** With 156 lost-time injuries out of 200 total incidents, 78% of all incidents resulted in lost time — an unusually high conversion rate pointing to a gap in early intervention. The near-miss ratio of 0.43 is critically low, suggesting near-misses are being underreported rather than genuinely rare, which masks the true risk exposure.
+
+- **Sunday is the highest-incident day of the week** (~35 incidents), consistently outpacing all weekdays. This pattern points to fatigue from consecutive shifts, reduced supervision, or inadequate weekend handover protocols — a structural risk that scheduling and supervisor coverage changes could directly address.
+
+- **Training compliance at 41% is driving the audit and compliance crisis.** With 16 already-expired certificates and 5 expiring soon, the expiry forecast shows a heavy wave peaking Oct–Nov 2026. The average audit score of 84 sits below the 90-point target with 120 open non-compliances — departments with the weakest training records are the same ones clustering at the highest non-compliance counts in the Score vs Non-Compliance analysis.
 
 ---
 
 ## What This Project Demonstrates
 
-This is not a charting exercise. It demonstrates:
+This project demonstrates:
 
 - **Real-world data engineering** — handling messy, inconsistent EHS records the way they actually arrive from the field
 - **Safety-critical KPI design** — building metrics that align with ISO 45001 and OSHA recordkeeping standards
