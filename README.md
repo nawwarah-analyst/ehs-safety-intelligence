@@ -78,7 +78,6 @@ The SQL layer runs in five sequential files, each building on the previous:
 - `dim_site` — site metadata with region and plant type
 - `dim_department` — department hierarchy
 - `dim_employee` — employee dimension with job role and tenure
-- `dim_date` — full date spine for trend analysis
 
 > **Note:** KPI calculations (LTIFR, near-miss ratio, training compliance %, audit score trend) are implemented as DAX measures within Power BI rather than SQL, keeping business logic centralised in the reporting layer and separate from the data model.
 
