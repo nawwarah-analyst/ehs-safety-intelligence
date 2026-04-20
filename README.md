@@ -80,11 +80,6 @@ The SQL layer runs in five sequential files, each building on the previous:
 - `dim_employee` — employee dimension with job role and tenure
 - `dim_date` — full date spine for trend analysis
 
-### Stage 4 — Fact Table (`04_fact_table.sql`)
-- `fct_incidents` — incident fact table with severity scoring and LTI flags
-- `fct_audit_scores` — audit performance with open findings count
-- `fct_training_compliance` — compliance rate by department and period
-
 > **Note:** KPI calculations (LTIFR, near-miss ratio, training compliance %, audit score trend) are implemented as DAX measures within Power BI rather than SQL, keeping business logic centralised in the reporting layer and separate from the data model.
 
 ---
@@ -136,8 +131,7 @@ ehs-safety-intelligence/
 ├── sql/
 │   ├── 01_schema.sql             # Table definitions and data types
 │   ├── 02_data_cleaning.sql      # Standardisation, deduplication, null handling
-│   ├── 03_dimensions.sql         # dim_site, dim_employee, dim_department, dim_date
-│   └── 04_fact_table.sql         # fct_incidents, fct_audits, fct_training
+│   └── 03_dimensions.sql         # dim_site, dim_employee, dim_department, dim_date
 │
 ├── power_bi/
 │   ├── ehs_dashboard.pbix        # Full Power BI report file
