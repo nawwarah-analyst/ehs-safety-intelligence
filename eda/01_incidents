@@ -1,3 +1,9 @@
+-- ============================================================
+-- EDA | Table: incidents
+-- Purpose: Profile the raw incidents table before cleaning.
+--          Run these queries in BigQuery and review the output
+--          before writing any cleaning or transformation SQL.
+-- ============================================================
 -- ─────────────────────────────────────────────
 -- SECTION 1: ROW COUNT & BASIC OVERVIEW
 -- ─────────────────────────────────────────────
