@@ -1,8 +1,6 @@
 -- ============================================================
 -- EDA | Table: audits
 -- Purpose: Profile the raw audits table before cleaning.
---          This table has the most data quality issues of the
---          three — pay close attention to sections 4 and 7.
 -- ============================================================
 
 
