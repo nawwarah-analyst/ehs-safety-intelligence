@@ -1,9 +1,7 @@
 -- ============================================================
 -- EDA | Cross-Table Analysis
 -- Purpose: Validate relationships across incidents, audits,
---          and training tables. Catch orphan records, coverage
---          gaps, and early multi-table insights before building
---          the dimensional model.
+--          and training tables.
 -- ============================================================
 
 
