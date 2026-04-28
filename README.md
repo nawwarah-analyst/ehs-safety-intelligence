@@ -58,7 +58,11 @@ Three source tables simulate real enterprise EHS data with intentional messiness
 | `audits.csv` | Safety audit scores by site | audit_id, audit_date, department, site, auditor, score, non-compliance, status, follow up|
 | `training.csv` | Employee training completion records | employee_id, department, site, training_type, completed, completion_date, expiry |
 
-#### Before modeling, EDA was conducted to validate data quality and understand distributions.
+#### Before modeling, EDA should been conducted to validate data quality and understand distributions.
+
+## ⚠️ Data Quality Note
+### This project was built without prior EDA or data validation. Upon reflection, I identified issues such as inconsistent naming conventions, mixed data types, and ambiguous classifications that may affect some findings.
+As a learning outcome, I have since written a full EDA and validation SQL layer documented in the /eda folder.
 ---
 
 ## SQL Pipeline (BigQuery)
