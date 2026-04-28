@@ -85,3 +85,58 @@ LEFT JOIN `portfolio-project-487605.ehs_project.ehs_training` t
   ON i.employee_id = t.emp_id
 WHERE UPPER(i.severity) = 'HIGH'
 ORDER BY i.incident_date
+
+-- ─────────────────────────────────────────────
+-- SECTION 3: HIGH-RISK SITE COMPOSITE SUMMARY
+-- Purpose: Single view combining all three data
+--          sources per site. This is the EDA-level
+--          preview of what the executive dashboard
+--          should show.
+-- ─────────────────────────────────────────────
+WITH incident_summary AS (
+  SELECT
+    site_location                                                       AS site,
+    COUNT(*)                                                            AS total_incidents,
+    COUNTIF(UPPER(severity) = 'HIGH')                                   AS high_severity,
+    ROUND(AVG(SAFE_CAST(days_lost AS FLOAT64)), 2)                      AS avg_days_lost,
+    COUNTIF(UPPER(CAST(near_miss_flag AS STRING)) IN ('Y', '1'))        AS near_misses
+  FROM `portfolio-project-487605.ehs_project.ehs_incidents`
+  GROUP BY site_location
+),
+audit_summary AS (
+  SELECT
+    site,
+    COUNT(*)                                                             AS total_audits,
+    ROUND(AVG(SAFE_CAST(score AS FLOAT64)), 2)                          AS avg_audit_score,
+    COUNTIF(UPPER(status) = 'FAIL')                                     AS failed_audits,
+    SUM(non_compliance)                                                  AS total_non_compliance
+  FROM `portfolio-project-487605.ehs_project.ehs_audit`
+  GROUP BY site
+),
+training_summary AS (
+  SELECT
+    site,
+    COUNT(*)                                                             AS total_training_records,
+    ROUND(
+      COUNTIF(completed = TRUE) * 100.0 / COUNT(*), 1
+    )                                                                    AS completion_rate_pct
+  FROM `portfolio-project-487605.ehs_project.ehs_training`
+  GROUP BY site
+)
+ 
+SELECT
+  COALESCE(i.site, a.site, t.site)  AS site,
+  i.total_incidents,
+  i.high_severity,
+  i.avg_days_lost,
+  i.near_misses,
+  a.total_audits,
+  a.avg_audit_score,
+  a.failed_audits,
+  a.total_non_compliance,
+  t.total_training_records,
+  t.completion_rate_pct              AS training_completion_pct
+FROM incident_summary  i
+FULL OUTER JOIN audit_summary    a ON i.site = a.site
+FULL OUTER JOIN training_summary t ON COALESCE(i.site, a.site) = t.site
+ORDER BY i.total_incidents DESC;
