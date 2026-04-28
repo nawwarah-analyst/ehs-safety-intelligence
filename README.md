@@ -61,8 +61,8 @@ Three source tables simulate real enterprise EHS data with intentional messiness
 #### Before modeling, EDA should been conducted to validate data quality and understand distributions.
 
 ## ⚠️ Data Quality Note
-### This project was built without prior EDA or data validation. Upon reflection, I identified issues such as inconsistent naming conventions, mixed data types, and ambiguous classifications that may affect some findings.
-As a learning outcome, I have since written a full EDA and validation SQL layer documented in the /eda folder.
+##### This project was built without prior EDA or data validation. Upon reflection, I identified issues such as inconsistent naming conventions, mixed data types, and ambiguous classifications that may affect some findings.
+##### As a learning outcome, I have since written a full EDA and validation SQL layer documented in the /eda folder.
 ---
 
 ## SQL Pipeline (BigQuery)
