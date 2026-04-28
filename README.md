@@ -54,10 +54,11 @@ Three source tables simulate real enterprise EHS data with intentional messiness
 
 | Source | Description | Key Fields |
 |---|---|---|
-| `incidents.csv` | Workplace injury and near-miss logs | date, site, department, type, severity, LTI flag |
-| `audits.csv` | Safety audit scores by site | date, site, auditor, score, findings, closure status |
-| `training.csv` | Employee training completion records | employee_id, course, completion_date, pass/fail |
+| `incidents.csv` | Workplace injury and near-miss logs | incident_id, incident_date, report_on, site_location, shift, department name, injury_type, severity, day_lost, root_cause, near_miss_flag, supervisor |
+| `audits.csv` | Safety audit scores by site | audit_id, audit_date, department, site, auditor, score, non-compliance, status, follow up|
+| `training.csv` | Employee training completion records | employee_id, department, site, training_type, completed, completion_date, expiry |
 
+#### Before modeling, EDA was conducted to validate data quality and understand distributions.
 ---
 
 ## SQL Pipeline (BigQuery)
