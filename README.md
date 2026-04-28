@@ -63,19 +63,15 @@ Three source tables simulate real enterprise EHS data with intentional messiness
 
 ## SQL Pipeline (BigQuery)
 
-The SQL layer runs in five sequential files, each building on the previous:
+The SQL layer runs in two sequential files, each building on the previous:
 
-### Stage 1 — Schema (`01_schema.sql`)
-- Defines all table structures and data types
-- Sets up the base tables for incidents, audits, and training records
-
-### Stage 2 — Data Cleaning (`02_data_cleaning.sql`)
+### Stage 1 — Data Cleaning (`01_data_cleaning.sql`)
 - Standardises date formats across all three tables
 - Normalises severity labels (`HIGH`, `High`, `high` → `High`)
 - Removes duplicate incident records
 - Flags missing training completion dates
 
-### Stage 3 — Dimensions (`03_dimensions.sql`)
+### Stage 2 — Dimensions (`02_dimensions.sql`)
 - `dim_site` — site metadata with region and plant type
 - `dim_department` — department hierarchy
 - `dim_employee` — employee dimension with job role and tenure
