@@ -1,9 +1,6 @@
 -- ============================================================
 -- EDA | Table: training
 -- Purpose: Profile the raw training table before cleaning.
---          Key issues to investigate: mixed date formats,
---          mixed completed flag values, and duplicate emp_id
---          records with different names.
 -- ============================================================
 
 
