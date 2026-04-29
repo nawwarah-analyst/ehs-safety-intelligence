@@ -62,7 +62,6 @@ Three source tables simulate real enterprise EHS data with intentional messiness
 
 ## ⚠️ Data Quality Note
 ##### This project was built without prior EDA or data validation. Upon reflection, I identified issues such as inconsistent naming conventions, mixed data types, and ambiguous classifications that may affect some findings.
-##### As a learning outcome, I have since written a full EDA and validation SQL layer documented in the /eda folder.
 ---
 
 ## SQL Pipeline (BigQuery)
@@ -128,11 +127,6 @@ ehs-safety-intelligence/
 │   ├── raw/                      # Original messy source files
 │   └── processed/                # Cleaned outputs after BigQuery pipeline
 │
-├── eda/
-│   ├── 01_incidents.sql          # Understand the raw incidents table before cleaning
-│   ├── 02_audit.sql              # Understand the raw audit table before cleaning
-│   ├── 03_training.sql           # Understand the raw training table before cleaning
-│   └── 04_cross-table.sql
 ├── sql/
 │   ├── 01_schema.sql             # Table definitions and data types
 │   ├── 02_data_cleaning.sql      # Standardisation, deduplication, null handling
